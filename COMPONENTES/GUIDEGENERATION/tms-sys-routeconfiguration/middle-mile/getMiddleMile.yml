@@ -5,7 +5,14 @@ info:
 
 http:
   method: GET
-  url: ""
+  url: "{{gcp-mac}}/tms-sys-routeconfiguration/middle-mile/routes?distributionCenterOrigin=30006&distributionCenterDestination=40035"
+  params:
+    - name: distributionCenterOrigin
+      value: "30006"
+      type: query
+    - name: distributionCenterDestination
+      value: "40035"
+      type: query
   auth: inherit
 
 settings:

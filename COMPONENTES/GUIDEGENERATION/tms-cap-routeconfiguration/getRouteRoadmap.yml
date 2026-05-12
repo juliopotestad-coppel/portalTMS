@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{gcp-dev}}/tms-cap-routeconfiguration/routes/roadmap"
+  url: "{{gcp-mac}}/tms-cap-routeconfiguration/routes/roadmap"
   headers:
     - name: content-type
       value: application/json
