@@ -1,0 +1,52 @@
+{
+  "name": "Coppel-env",
+  "variables": [
+    {
+      "name": "spring",
+      "value": "http://localhost:8080/dev",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "local",
+      "value": "http://localhost:",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "carrierhub-api",
+      "value": "https://coppel-api.ship-smart.mx/api/v1",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "copomex",
+      "value": "https://api.copomex.com/query",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "envioclick-api",
+      "value": "https://api.envioclickpro.com/api/v2",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "gcp-mac",
+      "value": "https://dev-apigee.coppel.space/tms-cfdimanager/v1",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    }
+  ],
+  "info": {
+    "type": "bruno-environment",
+    "exportedAt": "2026-05-12T17:58:04.352Z",
+    "exportedUsing": "Bruno/v3.3.0"
+  }
+}
