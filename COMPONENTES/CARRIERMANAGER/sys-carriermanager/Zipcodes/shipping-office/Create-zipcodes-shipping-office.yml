@@ -1,11 +1,11 @@
 info:
-  name: zipcodes/shipping-office
+  name: Create-zipcodes/shipping-office
   type: http
   seq: 3
 
 http:
   method: POST
-  url: http://localhost:8080/dev/sys-carriermanager/zipcodes/shipping-office
+  url: "{{spring}}/sys-carriermanager/zipcodes/shipping-office"
   body:
     type: json
     data: "{\r

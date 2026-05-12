@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{gcp-ext-dev}}/tms-sys-fleetmanagement/vehicle-configurations"
+  url: "{{gcp-mac}}/tms-sys-fleetmanagement/vehicle-configurations"
   auth: inherit
 
 settings:

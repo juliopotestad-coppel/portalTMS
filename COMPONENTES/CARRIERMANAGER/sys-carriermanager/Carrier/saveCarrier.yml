@@ -1,11 +1,11 @@
 info:
-  name: Carriers
+  name: saveCarrier
   type: http
   seq: 3
 
 http:
   method: POST
-  url: "{{gcp-ext-dev}}/sys-carriermanager/carriers"
+  url: "{{gcp-dev}}/sys-carriermanager/carriers"
   body:
     type: json
     data: "{\r

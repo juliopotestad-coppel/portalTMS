@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{gcp-prod}}/tms-com-sepomexscheduler/actuator/health"
+  url: "{{gcp-dev}}/tms-com-sepomexscheduler/actuator/health"
   auth: inherit
 
 settings:

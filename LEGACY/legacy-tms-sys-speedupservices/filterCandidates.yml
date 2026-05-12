@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8080/dev/sys-speedupservices/filterCandidates
+  url: "{{spring}}/sys-speedupservices/filterCandidates"
   auth: inherit
 
 settings:

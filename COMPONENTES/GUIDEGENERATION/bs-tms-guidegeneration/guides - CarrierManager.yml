@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{gcp-ext-qa}}/bs-tms-guidegeneration/guides"
+  url: "{{gcp-qa}}/bs-tms-guidegeneration/guides"
   headers:
     - name: businessUnit
       value: "30001"

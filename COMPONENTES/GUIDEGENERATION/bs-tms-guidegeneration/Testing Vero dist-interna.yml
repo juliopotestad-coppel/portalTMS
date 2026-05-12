@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: https://cmanager-qa.coppel.io/bs-tms-guidegeneration/guides
+  url: "{{gcp-qa}}/bs-tms-guidegeneration/guides"
   headers:
     - name: businessUnit
       value: "30001"

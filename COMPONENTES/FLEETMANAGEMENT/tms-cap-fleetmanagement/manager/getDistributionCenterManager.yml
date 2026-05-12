@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{local}}8081/tms-cap-fleetmanagement/distribution-centers/30006/manager?department-type=1"
+  url: "{{gcp-dev}}/tms-cap-fleetmanagement/distribution-centers/30006/manager?department-type=1"
   params:
     - name: department-type
       value: "1"

@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{local}}8081/dev/tms-proc-carrierselector/carriers/3/parcels"
+  url: "{{gcp-dev}}/tms-proc-carrierselector/carriers/3/parcels"
   body:
     type: json
     data: "{\r

@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{local}}8081/tms-cap-fleetmanagement/containers?page=0&size=10&unitNumber=&licensePlate=&year=&businessUnit=&typeId="
+  url: "{{gcp-dev}}/tms-cap-fleetmanagement/containers?page=0&size=10&unitNumber=&licensePlate=&year=&businessUnit=&typeId="
   params:
     - name: page
       value: "0"

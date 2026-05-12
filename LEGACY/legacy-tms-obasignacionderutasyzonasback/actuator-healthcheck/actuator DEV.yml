@@ -1,7 +1,7 @@
 info:
   name: actuator DEV
   type: http
-  seq: 19
+  seq: 16
 
 http:
   method: GET

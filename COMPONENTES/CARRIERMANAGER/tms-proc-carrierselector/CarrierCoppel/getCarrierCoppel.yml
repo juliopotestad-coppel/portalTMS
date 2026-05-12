@@ -5,8 +5,7 @@ info:
 
 http:
   method: GET
-  url: https://cmanager-qa.coppel.io/tms-proc-carrierselector/carriers-coppel
-  auth: inherit
+  url: "{{gcp-qa}}/tms-proc-carrierselector/carriers-coppel"
 
 settings:
   encodeUrl: true

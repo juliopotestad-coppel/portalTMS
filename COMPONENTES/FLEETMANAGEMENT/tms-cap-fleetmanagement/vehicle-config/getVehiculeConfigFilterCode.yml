@@ -5,15 +5,15 @@ info:
 
 http:
   method: GET
-  url: "{{local}}8081/tms-cap-fleetmanagement/vehicle-configurations?isArticulated=true"
+  url: "{{gcp-dev}}/tms-cap-fleetmanagement/vehicle-configurations?isArticulated=true"
   params:
+    - name: isArticulated
+      value: "true"
+      type: query
     - name: code
       value: B2
       type: query
       disabled: true
-    - name: isArticulated
-      value: "true"
-      type: query
   body:
     type: json
     data: ""

@@ -1,5 +1,5 @@
 info:
-  name: createZipCode
+  name: Create-ZipCodes
   type: http
   seq: 2
 

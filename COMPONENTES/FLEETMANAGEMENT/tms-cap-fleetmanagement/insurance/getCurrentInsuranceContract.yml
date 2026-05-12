@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{gcp-ext-dev}}/tms-cap-fleetmanagement/insurance-contracts/current"
+  url: "{{gcp-dev}}/tms-cap-fleetmanagement/insurance-contracts/current"
   auth: inherit
 
 settings:

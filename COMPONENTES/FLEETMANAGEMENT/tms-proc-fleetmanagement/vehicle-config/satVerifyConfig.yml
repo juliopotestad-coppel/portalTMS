@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{local}}8082/tms-proc-fleetmanagement/vehicle-configurations"
+  url: "{{gcp-dev}}/tms-proc-fleetmanagement/vehicle-configurations"
   body:
     type: json
     data: "{\r

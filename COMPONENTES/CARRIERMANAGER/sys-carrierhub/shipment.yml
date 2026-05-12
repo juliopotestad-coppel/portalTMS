@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{gcp-ext-qa}}/sys-carrierhub/shipment"
+  url: "{{gcp-qa}}/sys-carrierhub/shipment"
   headers:
     - name: Content-Type
       value: application/json

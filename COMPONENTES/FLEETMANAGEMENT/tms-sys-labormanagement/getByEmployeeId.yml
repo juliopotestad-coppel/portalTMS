@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{gcp-ext-qa}}/tms-sys-labormanagement/employees/90303366"
+  url: "{{gcp-qa}}/tms-sys-labormanagement/employees/90303366"
   auth: inherit
 
 settings:

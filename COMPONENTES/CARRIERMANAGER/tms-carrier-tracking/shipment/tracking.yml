@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{local}}8081/dev/tms-carrier-tracking/tracking"
+  url: "{{gcp-dev}}/tms-carrier-tracking/tracking"
   body:
     type: json
     data: "{\r

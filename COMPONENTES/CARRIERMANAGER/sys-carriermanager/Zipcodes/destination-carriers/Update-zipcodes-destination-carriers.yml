@@ -1,7 +1,7 @@
 info:
-  name: zipcodes/destination-carriers_2
+  name: Update-zipcodes/destination-carriers
   type: http
-  seq: 7
+  seq: 3
 
 http:
   method: PATCH

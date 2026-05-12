@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: https://coppel-api.ship-smart.mx/api/v1/shipping-guide
+  url: "{{carrierhub-api}}/shipping-guide"
   body:
     type: json
     data: "{\r

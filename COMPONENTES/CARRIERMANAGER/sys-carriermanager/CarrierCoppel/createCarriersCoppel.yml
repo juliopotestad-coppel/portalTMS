@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{gcp-ext-dev}}/sys-carriermanager/carriers-coppel"
+  url: "{{gcp-dev}}/sys-carriermanager/carriers-coppel"
   body:
     type: json
     data: "{\r

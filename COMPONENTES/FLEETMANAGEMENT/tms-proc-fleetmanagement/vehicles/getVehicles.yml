@@ -5,8 +5,14 @@ info:
 
 http:
   method: GET
-  url: "{{gcp-ext-qa}}/tms-proc-fleetmanagement/vehicles?page=0&size=10"
+  url: "{{gcp-qa}}/tms-proc-fleetmanagement/vehicles?page=0&size=10"
   params:
+    - name: page
+      value: "0"
+      type: query
+    - name: size
+      value: "10"
+      type: query
     - name: unitNumber
       value: ""
       type: query
@@ -27,12 +33,6 @@ http:
       value: ""
       type: query
       disabled: true
-    - name: page
-      value: "0"
-      type: query
-    - name: size
-      value: "10"
-      type: query
   auth:
     type: bearer
     token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjNQYUs0RWZ5Qk5RdTNDdGpZc2EzWW1oUTVFMCIsImtpZCI6IjNQYUs0RWZ5Qk5RdTNDdGpZc2EzWW1oUTVFMCJ9.eyJhdWQiOiJhcGk6Ly8wOGQxZGQ0Yy03YzZmLTQ5ZjAtYWEzYS1hYTM2NzIzY2Q4YjMiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC83NmQ4MTYyMS1iOWE5LTQ3ODYtYmI4Zi1hMmVmYTgzOWVlZTIvIiwiaWF0IjoxNzMwMzMxNDE2LCJuYmYiOjE3MzAzMzE0MTYsImV4cCI6MTczMDMzNTY4MSwiYWNyIjoiMSIsImFpbyI6IkFWUUFxLzhZQUFBQUp3ci8rSGQ4Nm5xZzJCNzFhdEdPYTd4OTQ3MHdPUjBMdWRKQlhnRitrczZSUEh2cXBCUzhWTlZLUGdrRG1ndkltK2ZERXk4MEozV2NFSDR4VXIvUFZteFR3U0grTWlCSk0zYnFnK2s5ZzhvPSIsImFtciI6WyJwd2QiLCJtZmEiXSwiYXBwaWQiOiIwOGQxZGQ0Yy03YzZmLTQ5ZjAtYWEzYS1hYTM2NzIzY2Q4YjMiLCJhcHBpZGFjciI6IjAiLCJmYW1pbHlfbmFtZSI6IlBvdGVzdGFkIEJlcm92aWRlcyIsImdpdmVuX25hbWUiOiJKdWxpbyBKZXN1cyIsImlwYWRkciI6IjE4Ny4xODkuMTQyLjIxIiwibmFtZSI6Ikp1bGlvIEplc3VzIFBvdGVzdGFkIEJlcm92aWRlcyIsIm9pZCI6IjkzMjc5MDYwLWIyMTgtNDMzMC1iZGUyLTdjN2U3ZDk5YzcwMiIsIm9ucHJlbV9zaWQiOiJTLTEtNS0yMS0zMjY1MjE5NjI5LTI4MjEyNjE0My0zOTc4NTM2MjY0LTQ0NDEzNiIsInJoIjoiMC5BU2dBSVJiWWRxbTVoa2U3ajZMdnFEbnU0a3pkMFFodmZQQkpxanFxTm5JODJMUFpBTUkuIiwic2NwIjoiRmxlZXRtYW5hZ2VtZW50Iiwic3ViIjoiSDZhaVl5SHBZUjVNWFNTaTh4ckwxMjQ4RFFsM0RxRmRoSFVQTDVLVlh5QSIsInRpZCI6Ijc2ZDgxNjIxLWI5YTktNDc4Ni1iYjhmLWEyZWZhODM5ZWVlMiIsInVuaXF1ZV9uYW1lIjoianVsaW8ucG90ZXN0YWRAY29wcGVsLmNvbSIsInVwbiI6Imp1bGlvLnBvdGVzdGFkQGNvcHBlbC5jb20iLCJ1dGkiOiJBRzMxUnFIZy0wS1BiczAtT085RkFBIiwidmVyIjoiMS4wIn0.K5_wohTD6JTOQmp-paFh8OnfT-ANdhVn4zJNSVrWx24BcDSTy9Bbar_QJmY2ipaoVLI1z-BscZKNFFrFeBfRqzjRSNy1HyUuA16CBN3i6QEANWUtd7YGNTqqWv0RwH8Iw0Pd63AaVQiClfgPGyT_B8B8D8fqE__TZHTiNNcNC0nt6Xww1YqNWtqT1LabfzyaoSvCRmPK-XXV2JzfnUyCVjr30pkfyfRXt35-XAiEbvQaMN6eOiwtWI6Me80xLQ9nRx-WajmIxEqUyF3f-fq6SBwPY2ggv6_tAoFRdVti8LDKJdChyUrcF7zQFpreE3bKN7JqYUeIPmapc5BZJZVBVA

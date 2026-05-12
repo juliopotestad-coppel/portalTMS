@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{gcp-ext-prod}}/tms-cap-fleetmanagement/drivers/names"
+  url: "{{gcp-dev}}/tms-cap-fleetmanagement/drivers/names"
   body:
     type: json
     data: "[90003254,90010413,90000824]"

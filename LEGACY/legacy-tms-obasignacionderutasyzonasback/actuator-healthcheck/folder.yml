@@ -1,7 +1,7 @@
 info:
-  name: Quotation
+  name: actuator-healthcheck
   type: folder
-  seq: 7
+  seq: 16
 
 request:
   auth: inherit

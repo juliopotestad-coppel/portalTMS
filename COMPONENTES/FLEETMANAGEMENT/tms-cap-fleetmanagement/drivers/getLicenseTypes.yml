@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{gcp-ext-qa}}/tms-cap-fleetmanagement/drivers/license-types"
+  url: "{{gcp-qa}}/tms-cap-fleetmanagement/drivers/license-types"
   auth: inherit
 
 settings:

@@ -1,11 +1,11 @@
 info:
-  name: destination-carriers/multiple
+  name: Create-zipcodes/destination-carriers/multiple
   type: http
-  seq: 8
+  seq: 3
 
 http:
   method: POST
-  url: http://localhost:8080/dev/sys-carriermanager/zipcodes/destination-carriers/multiple
+  url: "{{spring}}/sys-carriermanager/zipcodes/destination-carriers/multiple"
   body:
     type: json
     data: "{\r

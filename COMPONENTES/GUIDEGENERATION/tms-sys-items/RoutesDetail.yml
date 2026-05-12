@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: http://localhost:8080/dev/tms-sys-items/items/913613/routes/2
+  url: "{{gcp-dev}}/tms-sys-items/items/913613/routes/2"
 
 settings:
   encodeUrl: true

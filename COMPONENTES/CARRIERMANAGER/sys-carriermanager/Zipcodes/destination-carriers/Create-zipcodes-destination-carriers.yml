@@ -1,7 +1,7 @@
 info:
-  name: zipcodes/destination-carriers
+  name: Create-zipcodes/destination-carriers
   type: http
-  seq: 5
+  seq: 3
 
 http:
   method: POST

@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{gcp-ext-dev}}/tms-proc-carrierselector/coppel/status"
+  url: "{{gcp-dev}}/tms-proc-carrierselector/coppel/status"
   auth: inherit
 
 settings:

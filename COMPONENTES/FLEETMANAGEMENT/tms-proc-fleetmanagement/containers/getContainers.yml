@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{local}}8081/dev/tms-proc-fleetmanagement/containers?unitNumber=59289"
+  url: "{{gcp-dev}}/tms-proc-fleetmanagement/containers?unitNumber=59289"
   params:
     - name: unitNumber
       value: "59289"

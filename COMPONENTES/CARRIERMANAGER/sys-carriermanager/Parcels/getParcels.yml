@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{gcp-ext-qa}}/sys-carriermanager/carriers/1/parcels"
+  url: "{{gcp-qa}}/sys-carriermanager/carriers/1/parcels"
   auth: inherit
 
 settings:

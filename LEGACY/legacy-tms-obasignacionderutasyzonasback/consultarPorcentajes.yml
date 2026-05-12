@@ -1,7 +1,7 @@
 info:
   name: consultarPorcentajes
   type: http
-  seq: 14
+  seq: 12
 
 http:
   method: POST

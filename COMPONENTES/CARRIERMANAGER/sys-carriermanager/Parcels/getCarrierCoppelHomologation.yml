@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{gcp-ext-dev}}/sys-carriermanager/carrier-homologation"
+  url: "{{gcp-dev}}/sys-carriermanager/carrier-homologation"
   body:
     type: json
     data: "[\r
