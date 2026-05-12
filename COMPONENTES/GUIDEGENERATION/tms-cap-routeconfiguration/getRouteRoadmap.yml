@@ -1,0 +1,47 @@
+info:
+  name: getRouteRoadmap
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{gcp-dev}}/tms-cap-routeconfiguration/routes/roadmap"
+  headers:
+    - name: content-type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "originPostalcode": "80200",
+        "destinationPostalcode": "83295",
+        "isMarketplace": true,
+        "settlementId": 237153,
+        "deliveryMethods": [    {
+            "priority": 1,
+            "typeId": 1,
+            "routeTypes": [
+              {
+                "routeTypeId": 1,
+                "priority": 1
+              },
+              {
+                "routeTypeId": 2,
+                "priority": 2
+              }
+            ]
+          },
+          {
+            "priority": 2,
+            "typeId": 2,
+            "routeTypes": null
+          }
+        ]
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,135 @@
+info:
+  name: Testing Vero dist-interna
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: https://cmanager-qa.coppel.io/bs-tms-guidegeneration/guides
+  headers:
+    - name: businessUnit
+      value: "30001"
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "from": "ROPA",
+        "quotationType": "ROPA",
+        "shipmentReference": "REF-ABC-123",
+        "requestPickup": true,
+        "pickupDate": "2025-08-25",
+        "insurance": true,
+        "origin": {
+          "company": "Tech Solutions Inc.",
+          "rfc": "TSO951001TS1",
+          "firstName": "Juan",
+          "lastName": "Pérez",
+          "email": "juan.perez@techsolutions.com",
+          "phone": "5512345678",
+          "observations": "Recoger en la puerta principal, tocar el timbre.",
+          "country": "MX",
+          "street": "Avenida Siempre Viva",
+          "exteriorNumber": "742",
+          "interiorNumber": "5",
+          "settlement": "Colonia Centro",
+          "crossStreet": "Calle Falsa 123",
+          "zipCode": "45619",
+          "reference": "Edificio de cristal.",
+          "description": "Cajas de ropa y zapatos",
+          "dimensions": {
+            "width": 30,
+            "length": 40,
+            "height": 25,
+            "weight": 5,
+            "contentValue": 500.50
+          },
+          "items": [
+            {
+              "code": "835570220",
+              "description": "TENIS DAMA VANS VN0A4U22BB3",
+              "numberOfItems": 1,
+              "realDimensions": true,
+              "dimensions": {
+                "width": 10,
+                "length": 10,
+                "height": 5,
+                "weight": 5,
+                "contentValue": 350.75
+              },
+              "keyUnitWeight": "XPK",
+              "keyServicePrdCP": "31181701",
+              "dangerousMaterial": "0009",
+              "packagingType": "4G",
+              "units": 1
+            },
+            {
+              "code": "301482110",
+              "description": "PROG VOL FW23 PLAYERA BASICA",
+              "numberOfItems": 1,
+              "realDimensions": true,
+              "dimensions": {
+                "width": 15,
+                "length": 25,
+                "height": 8,
+                "weight": 2,
+                "contentValue": 150.25
+              },
+              "keyUnitWeight": "XPK",
+              "keyServicePrdCP": "31181701",
+              "dangerousMaterial": "0009",
+              "packagingType": "4G",
+              "units": 1
+            }
+          ]
+        },
+        "destination": {
+          "company": "Innovations Group",
+          "rfc": "IGA000505ABC",
+          "firstName": "María",
+          "lastName": "García",
+          "email": "maria.garcia@innovations.com",
+          "phone": "5598765432",
+          "observations": "Entregar antes de las 4 PM",
+          "country": "MX",
+          "street": "Calle de los Olivos",
+          "exteriorNumber": "500",
+          "interiorNumber": "A",
+          "settlement": "Colonia Los Pinos",
+          "crossStreet": "Avenida de la Paz",
+          "zipCode": "43600",
+          "reference": "Edificio rojo."
+        },
+        "packageType": "Paquete",
+        "paymentType": "Prepaid",
+        "purchaseFromType": "Cliente",
+        "conditionals": [
+          "deliverywithsignature",
+          "fragile"
+        ],
+        "extended": {
+          "order": 112822,
+          "invoice": 141022,
+          "itemIdentifier": 157481,
+          "store": 2,
+          "saleDate": "2025-08-21",
+          "promiseDate": "2025-08-25",
+          "client": 99012,
+          "clientName": "Pedro",
+          "clientPaternalSurname": "López",
+          "clientMaternalSurname": "González",
+          "zone": 9648,
+          "zoneName": "Mochis",
+          "city": 9,
+          "cityName": "Mochis",
+          "state": "Sinaloa"
+        }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,19 @@
+info:
+  name: getDistributionCenterManager
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{local}}8081/tms-cap-fleetmanagement/distribution-centers/30006/manager?department-type=1"
+  params:
+    - name: department-type
+      value: "1"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

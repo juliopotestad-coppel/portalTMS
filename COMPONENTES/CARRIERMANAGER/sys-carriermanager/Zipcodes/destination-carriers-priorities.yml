@@ -1,0 +1,36 @@
+info:
+  name: destination-carriers/priorities
+  type: http
+  seq: 10
+
+http:
+  method: PATCH
+  url: http://localhost:8080/dev/sys-carriermanager/zipcodes/destination-carriers/priorities
+  body:
+    type: json
+    data: "{\r
+
+      \  \"origin\": \"67250\",\r
+
+      \  \"destination\": \"67251\",\r
+
+      \  \"carriers\": [\r
+
+      \    {\r
+
+      \      \"id\": 3,\r
+
+      \      \"priority\": 3\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

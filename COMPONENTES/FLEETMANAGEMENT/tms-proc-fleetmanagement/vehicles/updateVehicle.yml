@@ -1,0 +1,73 @@
+info:
+  name: updateVehicle
+  type: http
+  seq: 1
+
+http:
+  method: PATCH
+  url: "{{local}}8082/tms-proc-fleetmanagement/vehicles/3"
+  headers:
+    - name: Session.Id
+      value: "90645823"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"id\": 3,\r
+
+      \  \"unitNumber\": 52273,\r
+
+      \  \"licensePlate\": \"GG57578\",\r
+
+      \  \"year\": 2018,\r
+
+      \  \"businessUnit\": \"30002\",\r
+
+      \  \"nomenclature\": null,\r
+
+      \  \"totalTires\": null,\r
+
+      \  \"totalAxles\": null,\r
+
+      \  \"weight\": null,\r
+
+      \  \"clasification\": {\r
+
+      \    \"id\": 1,\r
+
+      \    \"description\": \"UNIDAD\"\r
+
+      \  },\r
+
+      \  \"vehicleType\": {\r
+
+      \    \"id\": 8,\r
+
+      \    \"description\": \"TRAILER\"\r
+
+      \  },\r
+
+      \  \"vehicleDetail\": {\r
+
+      \    \"cabinCapacity\": 4,\r
+
+      \    \"energySource\": \"Gasolina\",\r
+
+      \    \"targetYieldSimple\": \"10\",\r
+
+      \    \"updatedBy\": \"90303366\",\r
+
+      \    \"targetYieldFull\": \"15\",\r
+
+      \    \"hasGPS\": true\r
+
+      \  }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

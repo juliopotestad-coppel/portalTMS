@@ -1,0 +1,7 @@
+info:
+  name: tms-carrier-booking
+  type: folder
+  seq: 6
+
+request:
+  auth: inherit

@@ -1,0 +1,42 @@
+info:
+  name: getDrivers
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{spring}}/tms-sys-fleetmanagement/drivers?page=7&size=10&businessUnit=&id=&license=&name=&rfc="
+  params:
+    - name: page
+      value: "7"
+      type: query
+    - name: size
+      value: "10"
+      type: query
+    - name: businessUnit
+      value: ""
+      type: query
+    - name: id
+      value: ""
+      type: query
+    - name: license
+      value: ""
+      type: query
+    - name: name
+      value: ""
+      type: query
+    - name: rfc
+      value: ""
+      type: query
+  body:
+    type: json
+    data: ""
+  auth:
+    type: bearer
+    token: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IkNOdjBPSTNSd3FsSEZFVm5hb01Bc2hDSDJYRSIsImtpZCI6IkNOdjBPSTNSd3FsSEZFVm5hb01Bc2hDSDJYRSJ9.eyJhdWQiOiJhcGk6Ly8wOGQxZGQ0Yy03YzZmLTQ5ZjAtYWEzYS1hYTM2NzIzY2Q4YjMiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC83NmQ4MTYyMS1iOWE5LTQ3ODYtYmI4Zi1hMmVmYTgzOWVlZTIvIiwiaWF0IjoxNzQ0MzExNzk2LCJuYmYiOjE3NDQzMTE3OTYsImV4cCI6MTc0NDMxNjQ5NiwiYWNyIjoiMSIsImFpbyI6IkFXUUFtLzhaQUFBQS9FY1FocXhkM05ONEU0UjJ1d1NVWXE1WlI5T3IrR0pGd2dlemF6bHI1ekNmRHk5d2MzVEtKZEwvRzREQ1oyYkJMaVFuU2RnNGVXUUdsNmoxdDdrYUFrMmNsdmczUkJwUU9iamJhcHFvNWF2MzR2aVl5TDlybjhoaHN0WjhEd2kzIiwiYW1yIjpbInB3ZCIsIm1mYSJdLCJhcHBpZCI6IjA4ZDFkZDRjLTdjNmYtNDlmMC1hYTNhLWFhMzY3MjNjZDhiMyIsImFwcGlkYWNyIjoiMCIsImZhbWlseV9uYW1lIjoiUG90ZXN0YWQgQmVyb3ZpZGVzIiwiZ2l2ZW5fbmFtZSI6Ikp1bGlvIEplc3VzIiwiaXBhZGRyIjoiMTg5LjIxOS4xMTIuMjI0IiwibmFtZSI6Ikp1bGlvIEplc3VzIFBvdGVzdGFkIEJlcm92aWRlcyIsIm9pZCI6IjkzMjc5MDYwLWIyMTgtNDMzMC1iZGUyLTdjN2U3ZDk5YzcwMiIsIm9ucHJlbV9zaWQiOiJTLTEtNS0yMS0zMjY1MjE5NjI5LTI4MjEyNjE0My0zOTc4NTM2MjY0LTQ0NDEzNiIsInJoIjoiMS5BU2dBSVJiWWRxbTVoa2U3ajZMdnFEbnU0a3pkMFFodmZQQkpxanFxTm5JODJMUFpBTUlvQUEuIiwic2NwIjoiRmxlZXRtYW5hZ2VtZW50Iiwic2lkIjoiMDAzZTk3ODktYWY2OC1lMGFhLTQ2ZWYtMzUzMWY4YTI4YmIyIiwic3ViIjoiSDZhaVl5SHBZUjVNWFNTaTh4ckwxMjQ4RFFsM0RxRmRoSFVQTDVLVlh5QSIsInRpZCI6Ijc2ZDgxNjIxLWI5YTktNDc4Ni1iYjhmLWEyZWZhODM5ZWVlMiIsInVuaXF1ZV9uYW1lIjoianVsaW8ucG90ZXN0YWRAY29wcGVsLmNvbSIsInVwbiI6Imp1bGlvLnBvdGVzdGFkQGNvcHBlbC5jb20iLCJ1dGkiOiJmcjVtS3AzaGFVaVh0VmQ1THZ1c0FBIiwidmVyIjoiMS4wIn0.VQ9ZN8sH_4IjR57RR2CcmZs8MKzQka3E3DYDkw_4x_0vAbnZGJMqHqVhqIdODBbe3-1jtCpjKn8t8gsHxqG3FKmJyJZndykz86TkRdj-aEAVRuUg41FtmZavvC0XwKIRFllcqwNYShtk62No7n3ykW275geuzbrr_bwJAMg5ah7DkcRYgD3QKsKCjxd4MQ8LTwi-Sxgngg4PmQdFB5hGdTzb0l5ylUecR0GpNFBq1YsYBJpiJgwnl4HxIToYzQz0lxwX9HoUhGYjSb18hTKyXLP3MDdKqoi85xK_XmXCkian5KadFa2UdYDz4dh2XVfO5O9cB6Ifv-ZHi-CJwKTxOQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

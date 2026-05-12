@@ -1,0 +1,285 @@
+info:
+  name: logisticsPlanning - CarrierManager DEV
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{gcp-ext-stage}}/bs-tms-logisticsplanning/logistics-planning"
+  headers:
+    - name: Authorization
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqdWxpby5wb3Rlc3RhZEBjb3BwZWwuY29tIiwiZXhwIjoxNzIxMjA1MTUxLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvZGV2L3Rtcy1jb3JlLWF1dGgvdjIvbG9naW4ifQ.5tbpQdHcwSGEpyYKbo78HJLW-4xyih6YcplJFk9Q7Z4
+      disabled: true
+  body:
+    type: json
+    data: "{   \r
+
+      \    \"businessUnit\": 30001, \r
+
+      \    \"postalCode\": \"43600\",\r
+
+      \    \"settlement\": \"54225\",\r
+
+      \    \"items\": [\r
+
+      \            {\r
+
+      \                \"id\": \"7bae60d1-3a1d-405d-ad19-95a1a3585377\",\r
+
+      \                \"sku\": \"301482110\",\r
+
+      \                \"name\": \"*PROG VOLUMEN FW23* PLAYERA BASICA COLO\",\r
+
+      \                \"shortDescription\": \"*PROG VOLUMEN FW23* PLAYERA BASICA COLOR BLANCO CON PRINT LOCALIZADO AL FRENTE Y ATRAS\",\r
+
+      \                \"longDescription\": \"PROG VOLUMEN FW23 PLAYERA BASICA COLOR BLANCO CON PRINT LOCALIZADO AL FRENTE Y ATRAS\",\r
+
+      \                \"itemTypeCode\": 1,\r
+
+      \                \"model\": \"VOL-004\",\r
+
+      \                \"dangerous\": false,\r
+
+      \                \"fragile\": true,\r
+
+      \                \"critical\": false,\r
+
+      \                \"assemblyRequired\": false,\r
+
+      \                \"assemblyTimeInMinutes\": 15,\r
+
+      \                \"area\": {\r
+
+      \                    \"id\": 2,\r
+
+      \                    \"name\": \"Ropa\"\r
+
+      \                },\r
+
+      \                \"itemTypes\": null,\r
+
+      \                \"updatedAt\": null,\r
+
+      \                \"createdAt\": null,\r
+
+      \                \"volumetricItem\": {\r
+
+      \                    \"itemId\": \"7bae60d1-3a1d-405d-ad19-95a1a3585377\",\r
+
+      \                    \"depth\": 40.07396697998047,\r
+
+      \                    \"width\": 0.8833245635032654,\r
+
+      \                    \"height\": 66.49816131591797,\r
+
+      \                    \"weight\": 0.12869538366794586,\r
+
+      \                    \"unitOfMeasure\": {\r
+
+      \                        \"code\": \"cm\",\r
+
+      \                        \"name\": \"\",\r
+
+      \                        \"description\": \"\",\r
+
+      \                        \"unitOfMeasureTypeCode\": \"cm\",\r
+
+      \                        \"measurementSystem\": {\r
+
+      \                            \"id\": 1,\r
+
+      \                            \"name\": \"\"\r
+
+      \                        }\r
+
+      \                    },\r
+
+      \                    \"unitOfMeasureWeightCode\": {\r
+
+      \                        \"code\": \"kg\",\r
+
+      \                        \"name\": \"\",\r
+
+      \                        \"description\": \"\",\r
+
+      \                        \"unitOfMeasureTypeCode\": \"kg\",\r
+
+      \                        \"measurementSystem\": {\r
+
+      \                            \"id\": 1,\r
+
+      \                            \"name\": \"\"\r
+
+      \                        }\r
+
+      \                    },\r
+
+      \                    \"volume\": 2353.9230\r
+
+      \                },\r
+
+      \                \"itemTax\": {\r
+
+      \                    \"id\": 971,\r
+
+      \                    \"taxablePercent\": \"0.16\",\r
+
+      \                    \"taxCode\": {\r
+
+      \                        \"id\": \"53103001\",\r
+
+      \                        \"name\": \"Camisetas (t-shirts) para hombre\",\r
+
+      \                        \"description\": \"Camisetas (t-shirts) para hombre\"\r
+
+      \                    },\r
+
+      \                    \"unitOfMeasureTax\": {\r
+
+      \                        \"id\": \"H87\",\r
+
+      \                        \"name\": \"Pieza\",\r
+
+      \                        \"description\": \"Unidad de conteo que define el número de piezas (pieza: un solo artículo, artículo o ejemplar).\"\r
+
+      \                    }\r
+
+      \                }\r
+
+      \            },\r
+
+      \            {\r
+
+      \                \"id\": \"2039057e-4ac9-4091-8017-862ab3ec52af\",\r
+
+      \                \"sku\": \"835570220\",\r
+
+      \                \"name\": \"NA\",\r
+
+      \                \"shortDescription\": \"NA\",\r
+
+      \                \"longDescription\": \"T800 SS22 TENIS DAMA MARCA VANS MODELO VN0A4U22BB3   WM SELDAN\",\r
+
+      \                \"itemTypeCode\": 1,\r
+
+      \                \"model\": \"VN0A4U22BB3   WM SELDAN\",\r
+
+      \                \"dangerous\": false,\r
+
+      \                \"fragile\": false,\r
+
+      \                \"critical\": false,\r
+
+      \                \"assemblyRequired\": false,\r
+
+      \                \"assemblyTimeInMinutes\": 30,\r
+
+      \                \"area\": {\r
+
+      \                    \"id\": 2,\r
+
+      \                    \"name\": \"Ropa\"\r
+
+      \                },\r
+
+      \                \"itemTypes\": null,\r
+
+      \                \"updatedAt\": null,\r
+
+      \                \"createdAt\": null,\r
+
+      \                \"volumetricItem\": {\r
+
+      \                    \"itemId\": \"2039057e-4ac9-4091-8017-862ab3ec52af\",\r
+
+      \                    \"depth\": 30.927276611328125,\r
+
+      \                    \"width\": 19.064550399780273,\r
+
+      \                    \"height\": 11.327813148498535,\r
+
+      \                    \"weight\": 0.5056666731834412,\r
+
+      \                    \"unitOfMeasure\": {\r
+
+      \                        \"code\": \"cm\",\r
+
+      \                        \"name\": \"\",\r
+
+      \                        \"description\": \"\",\r
+
+      \                        \"unitOfMeasureTypeCode\": \"cm\",\r
+
+      \                        \"measurementSystem\": {\r
+
+      \                            \"id\": 1,\r
+
+      \                            \"name\": \"\"\r
+
+      \                        }\r
+
+      \                    },\r
+
+      \                    \"unitOfMeasureWeightCode\": {\r
+
+      \                        \"code\": \"kg\",\r
+
+      \                        \"name\": \"\",\r
+
+      \                        \"description\": \"\",\r
+
+      \                        \"unitOfMeasureTypeCode\": \"kg\",\r
+
+      \                        \"measurementSystem\": {\r
+
+      \                            \"id\": 1,\r
+
+      \                            \"name\": \"\"\r
+
+      \                        }\r
+
+      \                    },\r
+
+      \                    \"volume\": 6679.0400\r
+
+      \                },\r
+
+      \                \"itemTax\": {\r
+
+      \                    \"id\": 1056,\r
+
+      \                    \"taxablePercent\": \"0.16\",\r
+
+      \                    \"taxCode\": {\r
+
+      \                        \"id\": \"53111902\",\r
+
+      \                        \"name\": \"Calzado atlético para mujer\",\r
+
+      \                        \"description\": \"Calzado atlético para mujer\"\r
+
+      \                    },\r
+
+      \                    \"unitOfMeasureTax\": {\r
+
+      \                        \"id\": \"H87\",\r
+
+      \                        \"name\": \"Pieza\",\r
+
+      \                        \"description\": \"Unidad de conteo que define el número de piezas (pieza: un solo artículo, artículo o ejemplar).\"\r
+
+      \                    }\r
+
+      \                }\r
+
+      \            }\r
+
+      \        ]\r
+
+      }\r\n"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,28 @@
+info:
+  name: getCobroCedisCiudad
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{spring}}/tms-sys-wscobroentregadomiciliobod/getCobroCedisCiudad/4"
+  body:
+    type: json
+    data: "[\r
+
+      \        {\r
+
+      \            \"codigo\": \"133345\",\r
+
+      \            \"area\": 1\r
+
+      \        }\r
+
+      ]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

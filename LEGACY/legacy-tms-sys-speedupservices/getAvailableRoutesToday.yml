@@ -1,0 +1,284 @@
+info:
+  name: getAvailableRoutesToday
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{spring}}/sys-speedupservices/availableRoutesToday"
+  body:
+    type: json
+    data: "[\r
+
+      \        {\r
+
+      \            \"city\": 184,\r
+
+      \            \"route\": 4\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 184,\r
+
+      \            \"route\": 7\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 184,\r
+
+      \            \"route\": 6\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 184,\r
+
+      \            \"route\": 14\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 184,\r
+
+      \            \"route\": 11\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 184,\r
+
+      \            \"route\": 1\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 184,\r
+
+      \            \"route\": 13\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 184,\r
+
+      \            \"route\": 17\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 184,\r
+
+      \            \"route\": 15\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 96,\r
+
+      \            \"route\": 10\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 96,\r
+
+      \            \"route\": 2\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 96,\r
+
+      \            \"route\": 6\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 96,\r
+
+      \            \"route\": 1\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 96,\r
+
+      \            \"route\": 5\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 688,\r
+
+      \            \"route\": 5\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 688,\r
+
+      \            \"route\": 4\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 688,\r
+
+      \            \"route\": 1\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 688,\r
+
+      \            \"route\": 3\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 688,\r
+
+      \            \"route\": 2\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 688,\r
+
+      \            \"route\": 6\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 197,\r
+
+      \            \"route\": 1\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 197,\r
+
+      \            \"route\": 2\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 419,\r
+
+      \            \"route\": 4\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 419,\r
+
+      \            \"route\": 1\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 419,\r
+
+      \            \"route\": 5\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 207,\r
+
+      \            \"route\": 6\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 207,\r
+
+      \            \"route\": 1\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 207,\r
+
+      \            \"route\": 5\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 339,\r
+
+      \            \"route\": 1\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 339,\r
+
+      \            \"route\": 9\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 243,\r
+
+      \            \"route\": 1\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 243,\r
+
+      \            \"route\": 5\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 243,\r
+
+      \            \"route\": 2\r
+
+      \        }\r
+
+      \    ]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

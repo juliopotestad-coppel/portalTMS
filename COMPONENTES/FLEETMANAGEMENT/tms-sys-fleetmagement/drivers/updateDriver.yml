@@ -1,0 +1,26 @@
+info:
+  name: updateDriver
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{gcp-ext-dev}}/tms-sys-fleetmanagement/drivers/90178337"
+  body:
+    type: json
+    data: "{\r
+
+      \    // \"license\": \"A543546867\",\r
+
+      \    \"rfc\": \"VAAM130719H60\",\r
+
+      \    \"tele\": \"99887755\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

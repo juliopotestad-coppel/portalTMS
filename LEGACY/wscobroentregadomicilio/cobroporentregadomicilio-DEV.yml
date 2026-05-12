@@ -1,0 +1,32 @@
+info:
+  name: cobroporentregadomicilio-DEV
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://10.65.208.11:17002/cobroDomicilio/cobroporentregadomicilio/4/7506
+  body:
+    type: json
+    data: "{\r
+
+      \    \"zona\": 2447  ,\r
+
+      \    \"tipoFactura\": 1,\r
+
+      \    \"montoFactura\": 498,\r
+
+      \    \"codigos\": [\r
+
+      \        {\"codigo\": \"100048\",\"area\": 1}\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

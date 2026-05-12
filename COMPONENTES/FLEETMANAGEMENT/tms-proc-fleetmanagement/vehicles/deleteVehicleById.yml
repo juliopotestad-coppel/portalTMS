@@ -1,0 +1,18 @@
+info:
+  name: deleteVehicleById
+  type: http
+  seq: 3
+
+http:
+  method: DELETE
+  url: "{{local}}8082/tms-proc-fleetmanagement/vehicles/3"
+  headers:
+    - name: Session.Id
+      value: "900784512"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,24 @@
+info:
+  name: createStatusCoppel
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{spring}}/sys-carriermanager/coppel/status"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"name\": \"Lorem ipsum dolor sit amet consectetur adipiscing elit Phasellus eget sagittis ante at eleifend ipsum Lorem ipsum dolor sit amet consectetur adipiscing elit Nunc a ligula pellentesque aliquet quam, vitae molestie purus Sed facilisis ac nisi non interdum Curabitur commodo nunc metus id commodo eros eleifend eget Suspendisse vel lacinia ligula scelerisque consequat turpis Nunc dapibus arcu vitae ex molestie non tincidunt lectus\",\r
+
+      \  \"status\": 1\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

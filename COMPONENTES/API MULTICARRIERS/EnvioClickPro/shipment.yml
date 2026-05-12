@@ -1,0 +1,134 @@
+info:
+  name: shipment
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{envioclick-api}}/sandbox/shipment"
+  headers:
+    - name: Content-Type
+      value: application/json
+    - name: User-Agent
+      value: EcUserAgent-2/17264
+  body:
+    type: json
+    data: "{\r
+
+      \    \"idRate\": 932479219,\r
+
+      \    \"myShipmentReference\": \"My Shipment 1A\",\r
+
+      \    \"requestPickup\": true,\r
+
+      \    \"pickupDate\": \"2017-12-20\",\r
+
+      \    \"insurance\": true,\r
+
+      \    \"package\": {\r
+
+      \        \"description\": \"Pink iPad\",\r
+
+      \        \"contentValue\": 120.01,\r
+
+      \        \"weight\": 1.01,\r
+
+      \        \"length\": 30.01,\r
+
+      \        \"height\": 15.01,\r
+
+      \        \"width\": 20.01,\r
+
+      \        \"items\": [\r
+
+      \            {\r
+
+      \                \"c_ClaveUnidadPeso\": \"XPK\",\r
+
+      \                \"c_ClaveProdServCP\": \"31181701\",\r
+
+      \                \"c_MaterialPeligroso\": \"0009\",\r
+
+      \                \"c_TipoEmbalaje\": \"4G\",\r
+
+      \                \"contentValue\": 100.5,\r
+
+      \                \"units\": 1\r
+
+      \            }\r
+
+      \        ]\r
+
+      \    },\r
+
+      \    \"origin\": {\r
+
+      \        \"company\": \"Company name\",\r
+
+      \        \"rfc\": \"XAXX010101000\",\r
+
+      \        \"firstName\": \"Pedro\",\r
+
+      \        \"lastName\": \"López\",\r
+
+      \        \"email\": \"pedro.lopez@example.com\",\r
+
+      \        \"phone\": \"3333333333\",\r
+
+      \        \"street\": \"Av. Revolución\",\r
+
+      \        \"number\": \"787\",\r
+
+      \        \"intNumber\": \"1\",\r
+
+      \        \"suburb\": \"Guadalajara Centro\",\r
+
+      \        \"crossStreet\": \"Street1 and street2\",\r
+
+      \        \"zipCode\": \"80000\",\r
+
+      \        \"reference\": \"Big white window\",\r
+
+      \        \"observations\": \"Campo para agregar información adicional\"\r
+
+      \    },\r
+
+      \    \"destination\": {\r
+
+      \        \"company\": \"Company name\",\r
+
+      \        \"rfc\": \"XAXX010101000\",\r
+
+      \        \"firstName\": \"Pedro\",\r
+
+      \        \"lastName\": \"López\",\r
+
+      \        \"email\": \"pedro.lopez@example.com\",\r
+
+      \        \"phone\": \"3333333333\",\r
+
+      \        \"street\": \"Calzada Lázaro Cárdenas\",\r
+
+      \        \"number\": \"727\",\r
+
+      \        \"intNumber\": \"1\",\r
+
+      \        \"suburb\": \"El Santuario\",\r
+
+      \        \"crossStreet\": \"Street1 and street2\",\r
+
+      \        \"zipCode\": \"13150\",\r
+
+      \        \"reference\": \"Big white window\",\r
+
+      \        \"observations\": \"Campo para agregar información adicional\"\r
+
+      \    }\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

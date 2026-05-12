@@ -1,0 +1,7 @@
+info:
+  name: proc-carriermanager
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

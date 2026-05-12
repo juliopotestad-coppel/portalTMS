@@ -1,0 +1,15 @@
+info:
+  name: rules-groups
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{gcp-stage}}/tms-ps-rbcs/rules-groups"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

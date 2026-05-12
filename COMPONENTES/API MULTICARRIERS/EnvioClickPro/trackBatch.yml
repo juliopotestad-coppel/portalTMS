@@ -1,0 +1,21 @@
+info:
+  name: trackBatch
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{envioclick-api}}/track-batch/line-haul"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"trackingCodes\": [\"HM1606229981666NHG\"]\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

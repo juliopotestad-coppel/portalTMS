@@ -1,0 +1,19 @@
+info:
+  name: rules-groups V2
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{gcp-dev}}/tms-ps-rbcs/v2/rules-groups?type=1"
+  params:
+    - name: type
+      value: "1"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

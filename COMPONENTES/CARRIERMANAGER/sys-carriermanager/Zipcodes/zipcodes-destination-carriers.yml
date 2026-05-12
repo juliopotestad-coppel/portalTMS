@@ -1,0 +1,36 @@
+info:
+  name: zipcodes/destination-carriers
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{spring}}/sys-carriermanager/zipcodes/destination-carriers"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"origin\": \"67250\",\r
+
+      \  \"destination\": \"13040\",\r
+
+      \  \"carriers\": [\r
+
+      \    {\r
+
+      \      \"id\": 1,\r
+
+      \      \"priority\": 1\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

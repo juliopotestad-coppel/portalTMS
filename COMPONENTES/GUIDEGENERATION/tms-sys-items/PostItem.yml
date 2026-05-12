@@ -1,0 +1,160 @@
+info:
+  name: PostItem
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{spring}}/tms-sys-items/items"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"sku\": \"VG-2025-PRO\",\r
+
+      \  \"name\": \"Silla de Oficina Ergonómica\",\r
+
+      \  \"shortDescription\": \"Silla ergonómica con soporte lumbar ajustable.\",\r
+
+      \  \"longDescription\": \"Diseñada para largas jornadas de trabajo, esta silla cuenta con múltiples ajustes de altura, inclinación y reposabrazos. Material de malla transpirable y base de acero cromado.\",\r
+
+      \  \"itemTypeCode\": 205,\r
+
+      \  \"model\": \"ERGO-CHAIR-BLK\",\r
+
+      \  \"dangerous\": false,\r
+
+      \  \"critical\": true,\r
+
+      \  \"fragile\": false,\r
+
+      \  \"assemblyRequired\": true,\r
+
+      \  \"assemblyTimeInMinutes\": 15,\r
+
+      \  \"area\": {\r
+
+      \            \"id\": 1,\r
+
+      \            \"name\": \"Muebles\" \r
+
+      \        },\r
+
+      \  \"itemTypes\": [\r
+
+      \          {\r
+
+      \            \"id\": 1,\r
+
+      \            \"name\": \"Electrónica\"\r
+
+      \          },\r
+
+      \          {\r
+
+      \            \"id\": 2,\r
+
+      \            \"name\": \"Computación\"\r
+
+      \          }\r
+
+      \        ],\r
+
+      \  \"updatedAt\": \"2025-06-10 16:00:00\",\r
+
+      \  \"createdAt\": \"2024-01-15 09:30:00\",\r
+
+      \  \"volumetricItem\": {\r
+
+      \    \"depth\": 65.5,\r
+
+      \    \"width\": 60.0,\r
+
+      \    \"height\": 120.0,\r
+
+      \    \"weight\": 15.5,\r
+
+      \    \"unitOfMeasure\": {\r
+
+      \      \"code\": \"cm\",\r
+
+      \      \"name\": \"Centímetro\",\r
+
+      \      \"description\": \"Unidad de medida para longitud\",\r
+
+      \      \"unitOfMeasureTypeCode\": \"LENGTH\",\r
+
+      \      \"measurementSystem\": {\r
+
+      \        \"id\": 1,\r
+
+      \        \"name\": \"Sistema Métrico\"\r
+
+      \      }\r
+
+      \    },\r
+
+      \    \"unitOfMeasureWeightCode\": {\r
+
+      \      \"unitOfMeasureCode\": \"kg\",\r
+
+      \      \"name\": \"Kilogramo\",\r
+
+      \      \"description\": \"Unidad de medida para masa/peso\",\r
+
+      \      \"unitOfMeasureTypeCode\": \"MASS\",\r
+
+      \      \"measurementSystem\": {\r
+
+      \        \"id\": 1,\r
+
+      \        \"name\": \"Sistema Métrico\"\r
+
+      \      }\r
+
+      \    },\r
+
+      \    \"volume\": 10.4\r
+
+      \  },\r
+
+      \  \"itemTaxes\": {\r
+
+      \    \"id\": 117,\r
+
+      \    \"taxablePercent\": \"16.00\",\r
+
+      \    \"taxCode\": \"IVA\",\r
+
+      \    \"unitOfMeasureTaxId\": \"H87\"\r
+
+      \  },\r
+
+      \  \"taxCode\": {\r
+
+      \    \"id\": \"IVA\",\r
+
+      \    \"name\": \"Impuesto al Valor Agregado\",\r
+
+      \    \"description\": \"Impuesto general aplicado a productos y servicios.\"\r
+
+      \  },\r
+
+      \  \"unitOfMeasureTax\": {\r
+
+      \    \"id\": \"H87\",\r
+
+      \    \"name\": \"Pieza\",\r
+
+      \    \"description\": \"Unidad contable para la tributación de artículos individuales.\"\r
+
+      \  }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

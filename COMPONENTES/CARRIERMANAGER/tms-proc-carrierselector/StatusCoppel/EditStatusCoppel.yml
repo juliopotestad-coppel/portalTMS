@@ -1,0 +1,27 @@
+info:
+  name: EditStatusCoppel
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{gcp-ext-dev}}/tms-proc-carrierselector/coppel/status/2"
+  headers:
+    - name: Session.Id
+      value: "90563895"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"name\": \"EN TRÁNSITO\",\r
+
+      \  \"status\": 1\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

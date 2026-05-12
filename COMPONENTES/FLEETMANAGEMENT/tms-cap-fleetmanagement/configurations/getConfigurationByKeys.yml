@@ -1,0 +1,24 @@
+info:
+  name: getConfigurationByKeys
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{local}}8081/tms-cap-fleetmanagement/configurations"
+  body:
+    type: json
+    data: "[\r
+
+      \    \"sct_license\",\r
+
+      \    \"sct_license_type\"\r
+
+      ]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

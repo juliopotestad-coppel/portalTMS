@@ -1,0 +1,7 @@
+info:
+  name: bs-tms-guidegeneration
+  type: folder
+  seq: 11
+
+request:
+  auth: inherit

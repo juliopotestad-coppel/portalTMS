@@ -1,0 +1,46 @@
+info:
+  name: quotations
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/dev/sys-carriermanager/quotations
+  body:
+    type: json
+    data: "{\r
+
+      \  \"quotations\": [\r
+
+      \    {\r
+
+      \      \"uuid\": \"3fa85f64-5717-4562-b3fc-2c963f664508\",\r
+
+      \      \"parcelQuotationId\": \"56479792A\",\r
+
+      \      //\"carrier\": \"DHL\",\r
+
+      \      \"contractId\": 5,\r
+
+      \      \"promiseDate\": \"2025-12-11\",\r
+
+      \      \"deliveryDays\": 5,\r
+
+      \      \"quotationType\": \"SHOPPING_CART\",\r
+
+      \      \"parcelId\": \"lol\",\r
+
+      \      \"parcelName\": \"lol\"\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

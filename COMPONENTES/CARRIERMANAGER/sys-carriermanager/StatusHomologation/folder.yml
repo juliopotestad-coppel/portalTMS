@@ -1,0 +1,7 @@
+info:
+  name: StatusHomologation
+  type: folder
+  seq: 10
+
+request:
+  auth: inherit

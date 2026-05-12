@@ -1,0 +1,146 @@
+info:
+  name: rules-selection - Grupo_RAC
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{gcp-stage}}/tms-ds-rbcs/rules-selection"
+  body:
+    type: json
+    data: "[\r
+
+      \    {\r
+
+      \        \"id\": \"791633a8-fdf7-46af-bbc5-76dcc6afae13\",\r
+
+      \        \"sku\": \"913613\",\r
+
+      \        \"name\": \"tLIBRE\",\r
+
+      \        \"shortDescription\": \"tMOTO G7\",\r
+
+      \        \"longDescription\": \"tLIBRE MOTOROLA MOTO G7\",\r
+
+      \        \"itemTypeCode\": 2,\r
+
+      \        \"model\": \"tMOTO G7\",\r
+
+      \        \"dangerous\": false,\r
+
+      \        \"fragile\": false,\r
+
+      \        \"critical\": false,\r
+
+      \        \"assemblyRequired\": false,\r
+
+      \        \"assemblyTimeInMinutes\": 15,\r
+
+      \        \"area\": {\r
+
+      \          \"id\": 1,\r
+
+      \          \"name\": \"Muebles\"\r
+
+      \        },\r
+
+      \        \"itemTypes\": null,\r
+
+      \        \"updatedAt\": null,\r
+
+      \        \"createdAt\": null,\r
+
+      \        \"volumetricItem\": {\r
+
+      \          \"itemId\": \"791633a8-fdf7-46af-bbc5-76dcc6afae13\",\r
+
+      \          \"depth\": 31.30769920349121,\r
+
+      \          \"width\": 21.713300704956055,\r
+
+      \          \"height\": 11.184800148010254,\r
+
+      \          \"weight\": 0.6244999766349792,\r
+
+      \          \"unitOfMeasure\": {\r
+
+      \            \"code\": \"cm\",\r
+
+      \            \"name\": \"\",\r
+
+      \            \"description\": \"\",\r
+
+      \            \"unitOfMeasureTypeCode\": \"\",\r
+
+      \            \"measurementSystem\": {\r
+
+      \              \"id\": 1,\r
+
+      \              \"name\": \"\"\r
+
+      \            }\r
+
+      \          },\r
+
+      \          \"unitOfMeasureWeightCode\": {\r
+
+      \            \"code\": \"kg\",\r
+
+      \            \"name\": \"\",\r
+
+      \            \"description\": \"\",\r
+
+      \            \"unitOfMeasureTypeCode\": \"\",\r
+
+      \            \"measurementSystem\": {\r
+
+      \              \"id\": 1,\r
+
+      \              \"name\": \"\"\r
+
+      \            }\r
+
+      \          },\r
+
+      \          \"volume\": 1.3701\r
+
+      \        },\r
+
+      \        \"itemTax\": {\r
+
+      \          \"id\": 1784,\r
+
+      \          \"taxablePercent\": \"0.16\",\r
+
+      \          \"taxCode\": {\r
+
+      \            \"id\": \"43191501\",\r
+
+      \            \"name\": \"TelÃ©fonos mÃ³viles\",\r
+
+      \            \"description\": \"TelÃ©fonos mÃ³viles\"\r
+
+      \          },\r
+
+      \          \"unitOfMeasureTax\": {\r
+
+      \            \"id\": \"H87\",\r
+
+      \            \"name\": \"Pieza\",\r
+
+      \            \"description\": \"Unidad de conteo que define el número de piezas (pieza: un solo artículo, artículo o ejemplar).\"\r
+
+      \          }\r
+
+      \        }\r
+
+      \      }\r
+
+      ]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

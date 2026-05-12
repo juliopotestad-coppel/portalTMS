@@ -1,0 +1,50 @@
+info:
+  name: grabarZonaSinAsignar
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: "{{spring}}/obasignacionderutasyzonasback/grabarZonaSinAsignar"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"bodega\": \"30001\",\r
+
+      \    \"ip\": \"1027945\",\r
+
+      \    \"ciudadPertenece\": \"4\",\r
+
+      \    \"ruta\": 9,\r
+
+      \    \"numEmpleado\": 90030151,\r
+
+      \    \"zonas\": [\r
+
+      \        {\r
+
+      \            \"numZona\": 44007,\r
+
+      \            \"nombreZona\": \"TEST-7\",\r
+
+      \            \"ciudad\": 4,\r
+
+      \            \"zona\": 4007,\r
+
+      \            \"checado\": true,\r
+
+      \            \"orden\": \"10\"\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

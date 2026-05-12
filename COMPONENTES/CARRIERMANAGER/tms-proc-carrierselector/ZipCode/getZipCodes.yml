@@ -1,0 +1,25 @@
+info:
+  name: getZipCodes
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{local}}/tms-proc-carrierselector/zipcodes?stateId=19&page=0&size=5000"
+  params:
+    - name: stateId
+      value: "19"
+      type: query
+    - name: page
+      value: "0"
+      type: query
+    - name: size
+      value: "5000"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

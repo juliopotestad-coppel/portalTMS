@@ -1,0 +1,18 @@
+info:
+  name: findDriversById
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{gcp-ext-prod}}/tms-cap-fleetmanagement/drivers/names"
+  body:
+    type: json
+    data: "[90003254,90010413,90000824]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: getParcels
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{gcp-ext-qa}}/sys-carriermanager/carriers/1/parcels"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,15 @@
+info:
+  name: getCarrierCoppel
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: https://cmanager-qa.coppel.io/tms-proc-carrierselector/carriers-coppel
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

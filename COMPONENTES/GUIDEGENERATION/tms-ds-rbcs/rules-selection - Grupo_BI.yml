@@ -1,0 +1,137 @@
+info:
+  name: rules-selection - Grupo_BI
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{gcp-dev}}/tms-ds-rbcs/v2/rules-selection"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "items":[
+              {
+                  "id": "791633a8-fdf7-46af-bbc5-76dcc6afae13",
+                  "sku": "skuParcel1",
+                  "name": "tLIBRE",
+                  "shortDescription": "tMOTO G7",
+                  "longDescription": "tLIBRE MOTOROLA MOTO G7",
+                  "itemTypeCode": 2,
+                  "model": "tMOTO G7",
+                  "dangerous": false,
+                  "fragile": false,
+                  "critical": false,
+                  "assemblyRequired": false,
+                  "volumetricItem": {
+                      "depth": 31.00,
+                      "width": 21.00,
+                      "height": 11.00,
+                      "weight": 0.6244999766349792
+                  },
+                  "area": {
+                      "id": 1,
+                      "name": "Muebles"
+                  }
+              },
+              {
+                  "sku": "skuBig1",
+                  "name": "Prueba Big item",
+                  "shortDescription": "tMOTO G7",
+                  "longDescription": "tLIBRE MOTOROLA MOTO G7",
+                  "itemTypeCode": 2,
+                  "model": "tMOTO G7",
+                  "dangerous": false,
+                  "fragile": false,
+                  "critical": false,
+                  "assemblyRequired": false,
+                  "volumetricItem": {
+                      "depth": 199.00,
+                      "width": 105.00,
+                      "height": 68.00,
+                      "weight": 0.6244999766349792
+                  },
+                  "area": {
+                      "id": 1,
+                      "name": "Muebles"
+                  }
+              },
+              {
+                  "sku": "skuParcel2",
+                  "name": "Prueba Big item",
+                  "shortDescription": "tMOTO G7",
+                  "longDescription": "tLIBRE MOTOROLA MOTO G7",
+                  "itemTypeCode": 2,
+                  "model": "tMOTO G7",
+                  "dangerous": false,
+                  "fragile": false,
+                  "critical": false,
+                  "assemblyRequired": false,
+                  "volumetricItem": {
+                      "depth": 19.00,
+                      "width": 15.00,
+                      "height": 68.00,
+                      "weight": 0.6244999766349792
+                  },
+                  "area": {
+                      "id": 1,
+                      "name": "Muebles"
+                  }
+              },
+              {
+                  "sku": "skuBig2",
+                  "name": "Prueba Big item",
+                  "shortDescription": "tMOTO G7",
+                  "longDescription": "tLIBRE MOTOROLA MOTO G7",
+                  "itemTypeCode": 2,
+                  "model": "tMOTO G7",
+                  "dangerous": false,
+                  "fragile": false,
+                  "critical": false,
+                  "assemblyRequired": false,
+                  "volumetricItem": {
+                      "depth": 199.00,
+                      "width": 105.00,
+                      "height": 68.00,
+                      "weight": 0.6244999766349792
+                  },
+                  "area": {
+                      "id": 1,
+                      "name": "Muebles"
+                  }
+              },{
+                  "sku": "skuParcel3",
+                  "name": "Prueba Parcel item",
+                  "shortDescription": "tMOTO G7",
+                  "longDescription": "tLIBRE MOTOROLA MOTO G7",
+                  "itemTypeCode": 2,
+                  "model": "tMOTO G7",
+                  "dangerous": false,
+                  "fragile": false,
+                  "critical": false,
+                  "assemblyRequired": false,
+                  "volumetricItem": {
+                      "depth": 19.00,
+                      "width": 15.00,
+                      "height": 28.00,
+                      "weight": 0.6244999766349792
+                  },
+                  "area": {
+                      "id": 1,
+                      "name": "Muebles"
+                  }
+              }
+
+          ],
+          "isMarketplace": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

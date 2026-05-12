@@ -1,0 +1,22 @@
+info:
+  name: getStatusHomologation
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{gcp-ext-dev}}/sys-carriermanager/status?carrierId=1&carrierCoppelId=1"
+  params:
+    - name: carrierId
+      value: "1"
+      type: query
+    - name: carrierCoppelId
+      value: "1"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

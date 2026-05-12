@@ -1,0 +1,59 @@
+info:
+  name: updateContainer
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{gcp-ext-dev}}/tms-proc-fleetmanagement/containers/11"
+  headers:
+    - name: Session.Id
+      value: "9030356"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 11,\r
+
+      \    \"unitNumber\": 52291,\r
+
+      \    \"licensePlate\": \"5RV438C\",\r
+
+      \    \"year\": 2017,\r
+
+      \    \"businessUnit\": null,\r
+
+      \    \"nomenclature\": null,\r
+
+      \    \"totalTires\": null,\r
+
+      \    \"totalAxles\": null,\r
+
+      \    \"weight\": 0,\r
+
+      \    \"clasification\": {\r
+
+      \        \"id\": 2,\r
+
+      \        \"description\": \"REMOLQUE\"\r
+
+      \    },\r
+
+      \    \"containerType\": {\r
+
+      \        \"id\": 15,\r
+
+      \        \"description\": \"GANZO\"\r
+
+      \    },\r
+
+      \    \"containerDetail\": null\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

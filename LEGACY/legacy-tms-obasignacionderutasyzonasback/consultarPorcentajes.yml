@@ -1,0 +1,28 @@
+info:
+  name: consultarPorcentajes
+  type: http
+  seq: 14
+
+http:
+  method: POST
+  url: "{{spring}}/obasignacionderutasyzonasback/consultarPorcentajes"
+  body:
+    type: json
+    data: "{ \r
+
+      \    \"bodega\": 30001,\r
+
+      \    \"opcion\": 1,            \r
+
+      \    \"ciudad\": 4,                       \r
+
+      \    \"ruta\": 7 \r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

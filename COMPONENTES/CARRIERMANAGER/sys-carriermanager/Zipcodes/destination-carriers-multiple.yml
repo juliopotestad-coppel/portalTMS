@@ -1,0 +1,44 @@
+info:
+  name: destination-carriers/multiple
+  type: http
+  seq: 8
+
+http:
+  method: POST
+  url: http://localhost:8080/dev/sys-carriermanager/zipcodes/destination-carriers/multiple
+  body:
+    type: json
+    data: "{\r
+
+      \  \"origin\": \"67250\",\r
+
+      \  \"destinations\": [\r
+
+      \    {\r
+
+      \      \"destination\": \"80000\",\r
+
+      \      \"carriers\": [\r
+
+      \        {\r
+
+      \          \"id\": 2,\r
+
+      \          \"priority\": 2\r
+
+      \        }\r
+
+      \      ]\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

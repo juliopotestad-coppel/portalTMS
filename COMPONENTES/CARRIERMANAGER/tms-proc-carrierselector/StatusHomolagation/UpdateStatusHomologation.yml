@@ -1,0 +1,36 @@
+info:
+  name: UpdateStatusHomologation
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: http://localhost:8081/dev/tms-proc-carrierselector/status?carrierId=1&carrierCoppelId=1&parcelStatus=CAMINO3
+  params:
+    - name: carrierId
+      value: "1"
+      type: query
+    - name: carrierCoppelId
+      value: "1"
+      type: query
+    - name: parcelStatus
+      value: CAMINO3
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    \"newParcelStatus\": \"CAMINO6\",\r
+
+      \    \"statusCoppelId\": 2,\r
+
+      \    \"status\": 1\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

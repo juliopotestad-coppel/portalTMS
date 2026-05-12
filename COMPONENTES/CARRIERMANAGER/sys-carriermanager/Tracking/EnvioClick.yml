@@ -1,0 +1,40 @@
+info:
+  name: EnvioClick
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{spring}}/sys-carriermanager/envioclick/tracking"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"trackingCode\": \"HM1606229981666NHH\", \r
+
+      \  \"parcelId\": 27,\r
+
+      \  \"events\": [\r
+
+      \    {\r
+
+      \        \"status\": \"Retraso de entrega\",  \r
+
+      \        \"statusDetail\": \"Se retraso debido al trasporte\",  \r
+
+      \        \"receivedBy\" : null,  \r
+
+      \        \"timestamp\": \"2025-07-21 09:00:31\"\r
+
+      \    }\r
+
+      \  ] \r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

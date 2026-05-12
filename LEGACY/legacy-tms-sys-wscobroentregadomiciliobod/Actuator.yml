@@ -1,0 +1,26 @@
+info:
+  name: Actuator
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: http://clcncedisapp.coppel.io:17091/tms-sys-wscobroentregadomiciliobod/actuator/info
+  body:
+    type: json
+    data: "{\r
+
+      \    \"zona\": 110,\r
+
+      \    \"tipoFactura\": 1,\r
+
+      \    \"montoFactura\": 345\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,142 @@
+info:
+  name: quotationEnvioClick
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{gcp-qa}}proc-carriermanagement/quotation"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"from\": \"ROPA\",\r
+
+      \  \"quotationType\": \"ROPA\",\r
+
+      \  \"origins\": [\r
+
+      \    {\r
+
+      \      \"street\": \"string\",\r
+
+      \      \"number\": \"strin\",\r
+
+      \      \"intNumber\": \"strin\",\r
+
+      \      \"settlement\": \"string\",\r
+
+      \      \"crossStreet\": \"string\",\r
+
+      \      \"zipCode\": \"45619\",\r
+
+      \      \"reference\": \"string\",\r
+
+      \      \"country\": \"string\",\r
+
+      \      \"description\": \"string\",\r
+
+      \      \"dimensions\": {\r
+
+      \        \"width\": 20,\r
+
+      \        \"length\": 20,\r
+
+      \        \"height\": 20,\r
+
+      \        \"weight\": 3.01,\r
+
+      \        \"contentValue\": 1\r
+
+      \      },\r
+
+      \      \"items\": [\r
+
+      \        {\r
+
+      \          \"description\": \"Envio de Ropa\",\r
+
+      \          \"numberOfItems\": 1073741824,\r
+
+      \          \"realDimensions\": true,\r
+
+      \          \"dimensions\": {\r
+
+      \            \"width\": 20.01,\r
+
+      \            \"length\": 20.01,\r
+
+      \            \"height\": 20.01,\r
+
+      \            \"weight\":  3.01,\r
+
+      \            \"contentValue\": 1\r
+
+      \          }\r
+
+      \        },\r
+
+      \        {\r
+
+      \          \"description\": \"Envio de Ropa\",\r
+
+      \          \"numberOfItems\": 1073741824,\r
+
+      \          \"realDimensions\": true,\r
+
+      \          \"dimensions\": {\r
+
+      \            \"width\": 20.01,\r
+
+      \            \"length\": 20.01,\r
+
+      \            \"height\": 20.01,\r
+
+      \            \"weight\":  3.01,\r
+
+      \            \"contentValue\": 1\r
+
+      \          }\r
+
+      \        }\r
+
+      \      ]\r
+
+      \    }\r
+
+      \  ],\r
+
+      \  \"destination\": {\r
+
+      \    \"street\": \"string\",\r
+
+      \    \"number\": \"strin\",\r
+
+      \    \"intNumber\": \"strin\",\r
+
+      \    \"settlement\": \"string\",\r
+
+      \    \"crossStreet\": \"string\",\r
+
+      \    \"zipCode\": \"43600\",\r
+
+      \    \"reference\": \"string\",\r
+
+      \    \"country\": \"MX\"\r
+
+      \  },\r
+
+      \  \"packageType\": \"string\",\r
+
+      \  \"paymentType\": \"string\",\r
+
+      \  \"purchaseFromType\": \"string\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

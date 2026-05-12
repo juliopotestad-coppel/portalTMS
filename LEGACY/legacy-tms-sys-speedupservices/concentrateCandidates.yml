@@ -1,0 +1,104 @@
+info:
+  name: concentrateCandidates
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:8080/dev/sys-speedupservices/concentrateCandidates
+  body:
+    type: json
+    data: "[\r
+
+      \        {\r
+
+      \            \"city\": 184,\r
+
+      \            \"route\": 7,\r
+
+      \            \"capacity\": 22,\r
+
+      \            \"available\": 7\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 96,\r
+
+      \            \"route\": 10,\r
+
+      \            \"capacity\": 20,\r
+
+      \            \"available\": 4\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 96,\r
+
+      \            \"route\": 2,\r
+
+      \            \"capacity\": 38,\r
+
+      \            \"available\": 13\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 96,\r
+
+      \            \"route\": 1,\r
+
+      \            \"capacity\": 40,\r
+
+      \            \"available\": 1\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 197,\r
+
+      \            \"route\": 1,\r
+
+      \            \"capacity\": 44,\r
+
+      \            \"available\": 1\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 243,\r
+
+      \            \"route\": 5,\r
+
+      \            \"capacity\": 18,\r
+
+      \            \"available\": 2\r
+
+      \        },\r
+
+      \        {\r
+
+      \            \"city\": 243,\r
+
+      \            \"route\": 2,\r
+
+      \            \"capacity\": 40,\r
+
+      \            \"available\": 5\r
+
+      \        }\r
+
+      \    ]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

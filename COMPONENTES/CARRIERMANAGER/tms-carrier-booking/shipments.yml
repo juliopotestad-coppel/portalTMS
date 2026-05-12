@@ -1,0 +1,183 @@
+info:
+  name: shipments
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{gcp-dev}}/tms-carrier-booking/shipment"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"quotationUuid\": \"00396e8e-3688-40bd-80fb-650819747633\",\r
+
+      \  \"parcelQuotationId\": \"2612457\",\r
+
+      \  \"carrierId\": 17,\r
+
+      \  \"carrier\": \"COPPEL EXPRESS\",\r
+
+      \  \"shipmentReference\": \"My Shipment 1A\",\r
+
+      \  \"requestPickup\": true,\r
+
+      \  \"pickupDate\": \"2026-03-06\",\r
+
+      \  \"origin\": {\r
+
+      \    \"company\": \"Company name\",\r
+
+      \    \"rfc\": \"XAXX010101000\",\r
+
+      \    \"firstName\": \"string\",\r
+
+      \    \"lastName\": \"string\",\r
+
+      \    \"email\": \"jose.zamora@coppel.com\",\r
+
+      \    \"street\": \"string\",\r
+
+      \    \"number\": \"777\",\r
+
+      \    \"intNumber\": \"strin\",\r
+
+      \    \"settlement\": \"string\",\r
+
+      \    \"crossStreet\": \"string\",\r
+
+      \    \"zipCode\": \"45619\",\r
+
+      \    \"country\": \"string\",\r
+
+      \    \"reference\": \"string\",\r
+
+      \    \"observations\": \"string\",\r
+
+      \    \"description\": \"string\",\r
+
+      \    \"dimensions\": {\r
+
+      \      \"width\": 25.0,\r
+
+      \      \"length\": 40.0,\r
+
+      \      \"height\": 5.0,\r
+
+      \      \"weight\": 30.0,\r
+
+      \      \"contentValue\": 1,\r
+
+      \      \"content_value\": 500.5\r
+
+      \    },\r
+
+      \    \"phone\": \"3333333333\",\r
+
+      \    \"package\": [\r
+
+      \      {\r
+
+      \        \"description\": \"Envio de Ropa\",\r
+
+      \        \"numberOfItems\": 1,\r
+
+      \        \"identifier\": \"string\",\r
+
+      \        \"dimensions\": {\r
+
+      \          \"width\": 25.0,\r
+
+      \          \"length\": 40.0,\r
+
+      \          \"height\": 5.0,\r
+
+      \          \"weight\": 30.0,\r
+
+      \          \"contentValue\": 1,\r
+
+      \          \"content_value\": 500.5\r
+
+      \        },\r
+
+      \        \"satData\": {\r
+
+      \          \"keyUnitWeight\": \"XLT\",\r
+
+      \          \"keyServicePrdCP\": \"78101800\",\r
+
+      \          \"dangerousMaterial\": null,\r
+
+      \          \"packagingType\": null,\r
+
+      \          \"contentValue\":500.5,\r
+
+      \          \"units\": 1\r
+
+      \        }\r
+
+      \      }\r
+
+      \    ]\r
+
+      \  },\r
+
+      \  \"destination\": {\r
+
+      \    \"company\": \"Company name\",\r
+
+      \    \"rfc\": \"XAXX010101000\",\r
+
+      \    \"firstName\": \"string\",\r
+
+      \    \"lastName\": \"string\",\r
+
+      \    \"email\": \"pablo.hernandez@coppel.com\",\r
+
+      \    \"street\": \"string\",\r
+
+      \    \"number\": \"777\",\r
+
+      \    \"intNumber\": \"strin\",\r
+
+      \    \"settlement\": \"string\",\r
+
+      \    \"crossStreet\": \"string\",\r
+
+      \    \"zipCode\": \"43600\",\r
+
+      \    \"country\": \"string\",\r
+
+      \    \"reference\": \"string\",\r
+
+      \    \"observations\": \"string\",\r
+
+      \    \"phone\": \"3333333333\"\r
+
+      \  },\r
+
+      \  \"packageType\": \"Paquete\",\r
+
+      \  \"paymentType\": \"Prepaid\",\r
+
+      \  \"purchaseFromType\": \"Cliente\",\r
+
+      \  \"contractId\": 1,\r
+
+      \  \"quotationType\": \"string\",\r
+
+      \  \"conditionals\": [\r
+
+      \    \"string\"\r
+
+      \  ],\r
+
+      \  \"insurance\": true\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,243 @@
+info:
+  name: guides - Ownguides
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://cmanager-qa.coppel.io/bs-tms-guidegeneration/guides
+  headers:
+    - name: businessUnit
+      value: "30001"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"from\": \"ROPA\",\r
+
+      \    \"quotationType\": \"ROPA\",\r
+
+      \    \"shipmentReference\": \"REF-ABC-123\",\r
+
+      \    \"requestPickup\": true,\r
+
+      \    \"pickupDate\": \"2025-08-25\",\r
+
+      \    \"insurance\": true,\r
+
+      \    \"origin\": {\r
+
+      \        \"company\": \"Tech Solutions Inc.\",\r
+
+      \        \"rfc\": \"TSO951001TS1\",\r
+
+      \        \"firstName\": \"Juan\",\r
+
+      \        \"lastName\": \"Pérez\",\r
+
+      \        \"email\": \"juan.perez@techsolutions.com\",\r
+
+      \        \"phone\": \"5512345678\",\r
+
+      \        \"observations\": \"Recoger en la puerta principal, tocar el timbre.\",\r
+
+      \        \"country\": \"MX\",\r
+
+      \        \"street\": \"Avenida Siempre Viva\",\r
+
+      \        \"exteriorNumber\": \"742\",\r
+
+      \        \"interiorNumber\": \"5\",\r
+
+      \        \"settlement\": \"Colonia Centro\",\r
+
+      \        \"crossStreet\": \"Calle Falsa 123\",\r
+
+      \        \"zipCode\": \"37490\",\r
+
+      \        \"reference\": \"Edificio de cristal.\",\r
+
+      \        \"description\": \"Cajas de ropa y zapatos\",\r
+
+      \        \"dimensions\": {\r
+
+      \            \"width\": 30,\r
+
+      \            \"length\": 40,\r
+
+      \            \"height\": 25,\r
+
+      \            \"weight\": 5,\r
+
+      \            \"contentValue\": 500.50\r
+
+      \        },\r
+
+      \        \"items\": [\r
+
+      \            {\r
+
+      \                \"code\": \"301482110\",\r
+
+      \                \"description\": \"PROG VOL FW23 PLAYERA BASICA\",\r
+
+      \                \"numberOfItems\": 1,\r
+
+      \                \"realDimensions\": true,\r
+
+      \                \"dimensions\": {\r
+
+      \                    \"width\": 15,\r
+
+      \                    \"length\": 25,\r
+
+      \                    \"height\": 8,\r
+
+      \                    \"weight\": 2.0,\r
+
+      \                    \"contentValue\": 150.25\r
+
+      \                },\r
+
+      \                \"keyUnitWeight\": \"KG\",\r
+
+      \                \"keyServicePrdCP\": \"01010102\",\r
+
+      \                \"dangerousMaterial\": \"true\",\r
+
+      \                \"packagingType\": \"Caja\",\r
+
+      \                \"units\": 1\r
+
+      \            },\r
+
+      \            {\r
+
+      \                \"code\": \"835570220\",\r
+
+      \                \"description\": \"TENIS DAMA VANS VN0A4U22BB3\",\r
+
+      \                \"numberOfItems\": 1,\r
+
+      \                \"realDimensions\": true,\r
+
+      \                \"dimensions\": {\r
+
+      \                    \"width\": 10,\r
+
+      \                    \"length\": 10,\r
+
+      \                    \"height\": 5,\r
+
+      \                    \"weight\": 0.5,\r
+
+      \                    \"contentValue\": 350.75\r
+
+      \                },\r
+
+      \                \"keyUnitWeight\": \"KG\",\r
+
+      \                \"keyServicePrdCP\": \"01010101\",\r
+
+      \                \"dangerousMaterial\": \"true\",\r
+
+      \                \"packagingType\": \"Caja\",\r
+
+      \                \"units\": 1\r
+
+      \            }\r
+
+      \        ]\r
+
+      \    },\r
+
+      \    \"destination\": {\r
+
+      \        \"company\": \"Innovations Group\",\r
+
+      \        \"rfc\": \"IGA000505ABC\",\r
+
+      \        \"firstName\": \"María\",\r
+
+      \        \"lastName\": \"García\",\r
+
+      \        \"email\": \"maria.garcia@innovations.com\",\r
+
+      \        \"phone\": \"5598765432\",\r
+
+      \        \"observations\": \"Entregar antes de las 4 PM\",\r
+
+      \        \"country\": \"MX\",\r
+
+      \        \"street\": \"Calle de los Olivos\",\r
+
+      \        \"exteriorNumber\": \"500\",\r
+
+      \        \"interiorNumber\": \"A\",\r
+
+      \        \"settlement\": \"Colonia Los Pinos\",\r
+
+      \        \"crossStreet\": \"Avenida de la Paz\",\r
+
+      \        \"zipCode\": \"80000\",\r
+
+      \        \"reference\": \"Edificio rojo.\"\r
+
+      \    },\r
+
+      \    \"packageType\": \"Paquete\",\r
+
+      \    \"paymentType\": \"Prepaid\",\r
+
+      \    \"purchaseFromType\": \"Cliente\",\r
+
+      \    \"conditionals\": [\r
+
+      \        \"delivery with signature\",\r
+
+      \        \"fragile\"\r
+
+      \    ],\r
+
+      \    \"extended\": {\r
+
+      \        \"order\": 112822,\r
+
+      \        \"invoice\": 141022,\r
+
+      \        \"itemIdentifier\": 157481,\r
+
+      \        \"store\": 2,\r
+
+      \        \"saleDate\": \"2025-08-21\",\r
+
+      \        \"promiseDate\": \"2025-08-25\",\r
+
+      \        \"client\": 99012,\r
+
+      \        \"clientName\": \"Pedro\",\r
+
+      \        \"clientPaternalSurname\": \"López\",\r
+
+      \        \"clientMaternalSurname\": \"González\",\r
+
+      \        \"zone\": 80,\r
+
+      \        \"zoneName\": \"Bugambilias\",\r
+
+      \        \"city\": 9,\r
+
+      \        \"cityName\": \"Zapopan\",\r
+
+      \        \"state\": \"Jalisco\"\r
+
+      \    }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

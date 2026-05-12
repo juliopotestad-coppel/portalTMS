@@ -1,0 +1,15 @@
+info:
+  name: estatus
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{spring}}/transmitirrutas/rutas/estatus"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

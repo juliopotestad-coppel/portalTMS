@@ -1,0 +1,29 @@
+info:
+  name: createStatusHomologation
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8081/dev/tms-proc-carrierselector/status
+  body:
+    type: json
+    data: "{\r
+
+      \  \"carrierId\": 1,\r
+
+      \  \"carrierCoppelId\": 1,\r
+
+      \  \"parcelStatus\": \"Camino3\",\r
+
+      \  \"statusCoppelId\": 3,\r
+
+      \  \"status\": 1\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
