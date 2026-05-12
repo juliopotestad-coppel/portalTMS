@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{local}}8082/tms-proc-fleetmanagement/vehicles/types"
+  url: "{{gcp-dev}}/tms-proc-fleetmanagement/vehicles/types"
   auth: inherit
 
 settings:

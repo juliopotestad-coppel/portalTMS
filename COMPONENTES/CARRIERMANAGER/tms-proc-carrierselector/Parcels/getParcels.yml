@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{gcp-ext-dev}}/tms-proc-carrierselector/carriers/3/parcels"
+  url: "{{gcp-dev}}/tms-proc-carrierselector/carriers/3/parcels"
   auth: inherit
 
 settings:

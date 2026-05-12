@@ -5,7 +5,7 @@ info:
 
 http:
   method: PATCH
-  url: "{{gcp-ext-qa}}/sys-carriermanager/coppel/status/8"
+  url: "{{gcp-qa}}/sys-carriermanager/coppel/status/8"
   body:
     type: json
     data: "{\r

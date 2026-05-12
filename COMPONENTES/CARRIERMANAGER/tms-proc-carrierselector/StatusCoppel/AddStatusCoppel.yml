@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8081/dev/tms-proc-carrierselector/coppel/status
+  url: "{{gcp-dev}}/tms-proc-carrierselector/coppel/status"
   body:
     type: json
     data: "{\r

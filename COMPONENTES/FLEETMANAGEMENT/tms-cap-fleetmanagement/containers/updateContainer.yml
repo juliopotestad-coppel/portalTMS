@@ -5,7 +5,7 @@ info:
 
 http:
   method: PATCH
-  url: "{{gcp-ext-dev}}/tms-cap-fleetmanagement/containers/11"
+  url: "{{gcp-dev}}/tms-cap-fleetmanagement/containers/11"
   body:
     type: json
     data: "{\r

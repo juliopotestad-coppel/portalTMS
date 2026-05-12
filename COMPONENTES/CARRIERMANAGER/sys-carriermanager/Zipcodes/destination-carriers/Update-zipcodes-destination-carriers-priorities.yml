@@ -1,11 +1,11 @@
 info:
-  name: destination-carriers/priorities
+  name: Update-zipcodes/destination-carriers/priorities
   type: http
-  seq: 10
+  seq: 4
 
 http:
   method: PATCH
-  url: http://localhost:8080/dev/sys-carriermanager/zipcodes/destination-carriers/priorities
+  url: "{{spring}}/sys-carriermanager/zipcodes/destination-carriers/priorities"
   body:
     type: json
     data: "{\r

@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{/tms-proc-wscobroentregadomicilio/actuator/info"
+  url: "{{spring}}/tms-proc-wscobroentregadomicilio/actuator/info"
   body:
     type: text
     data: "{\r

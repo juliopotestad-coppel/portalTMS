@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: https://wms-dev.coppel.io/dev/wms-ps-ropadistribucion/guias
+  url: "{{gcp-wms}}/wms-ps-ropadistribucion/guias"
   headers:
     - name: content-type
       value: application/json

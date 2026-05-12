@@ -5,7 +5,7 @@ info:
 
 http:
   method: PATCH
-  url: "{{gcp-ext-dev}}/sys-carriermanager/carriers/3/parcel/19"
+  url: "{{gcp-dev}}/sys-carriermanager/carriers/3/parcel/19"
   body:
     type: json
     data: "{\r

@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{local}}8081/tms-cap-fleetmanagement/drivers/temporary"
+  url: "{{gcp-dev}}/tms-cap-fleetmanagement/drivers/temporary"
   body:
     type: json
     data: "{\r

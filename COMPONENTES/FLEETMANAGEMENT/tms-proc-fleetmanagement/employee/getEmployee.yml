@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{local}}8082/tms-proc-fleetmanagement/employees/90303366"
+  url: "{{gcp-dev}}/tms-proc-fleetmanagement/employees/90303366"
   auth: inherit
 
 settings:

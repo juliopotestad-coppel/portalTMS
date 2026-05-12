@@ -1,11 +1,11 @@
 info:
-  name: shipment/tracking
+  name: tracking
   type: http
   seq: 2
 
 http:
   method: POST
-  url: http://localhost:8081/dev/sys-carriermanager/tracking
+  url: "{{spring}}/sys-carriermanager/tracking"
   body:
     type: json
     data: "{\r

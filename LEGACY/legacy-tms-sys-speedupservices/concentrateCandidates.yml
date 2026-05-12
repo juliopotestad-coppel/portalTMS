@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8080/dev/sys-speedupservices/concentrateCandidates
+  url: "{{spring}}/sys-speedupservices/concentrateCandidates"
   body:
     type: json
     data: "[\r

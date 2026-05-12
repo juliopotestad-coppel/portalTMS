@@ -1,11 +1,11 @@
 info:
   name: consultarZonasSinAsignar
   type: http
-  seq: 6
+  seq: 5
 
 http:
   method: POST
-  url: https://cedisdev.coppel.io:20541/legacy-tms-obasignacionderutasyzonasback/obasignacionderutasyzonasback//consultarZonasSinAsignar
+  url: "{{arz-dev}}/obasignacionderutasyzonasback/consultarZonasSinAsignar"
   body:
     type: json
     data: "{\r

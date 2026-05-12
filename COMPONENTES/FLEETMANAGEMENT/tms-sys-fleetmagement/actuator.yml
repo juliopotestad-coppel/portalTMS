@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{apigee-dev-mac}}/tms-sys-fleetmanagement/actuator/health"
+  url: "{{gcp-mac}}/tms-sys-fleetmanagement/actuator/health"
   auth: inherit
 
 settings:

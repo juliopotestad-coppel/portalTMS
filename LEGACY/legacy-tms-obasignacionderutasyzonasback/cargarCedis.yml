@@ -1,11 +1,11 @@
 info:
   name: cargarCedis
   type: http
-  seq: 11
+  seq: 9
 
 http:
   method: POST
-  url: https://cedisdev.coppel.io:20541/legacy-tms-obasignacionderutasyzonasback/obasignacionderutasyzonasback/cargarCedis
+  url: "{{arz-dev}}/obasignacionderutasyzonasback/cargarCedis"
   headers:
     - name: Authorization
       value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IiIsImVtYWlsIjoiIiwidXNlciI6IjkwMjc3MzY2IiwidXNlclR5cGUiOiIwIiwibG9naW5UeXBlIjoxLCJkZXZpY2VJZCI6IiIsInBhaXMiOiJtZXgiLCJleHRlcm5vIjpmYWxzZSwiaXBPcmlnZW4iOiIxMC40NC43NC4xMzYiLCJkYXRhIjpudWxsLCJhdWQiOiJodHRwczovL2NvcHBlbC5jb20iLCJleHAiOjE2OTA5MzA2MjksImp0aSI6IjE2OTA5MDE4MjktOTAyNzczNjYiLCJpYXQiOjE2OTA2MDEsImlzcyI6Imh0dHBzOi8vY29wcGVsLmNvbSIsIm5iZiI6MTY5MDYwMSwic3ViIjoiOTAyNzczNjYifQ.9-pl0I9SBYUwSiDkTDv4oNtRI9ZjbuwcTK2I-k3HUOU

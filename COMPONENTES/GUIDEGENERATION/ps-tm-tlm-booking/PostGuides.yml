@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{gcp-ext-dev}}/ps-tm-tlm-booking/guides"
+  url: "{{gcp-dev}}/ps-tm-tlm-booking/guides"
   body:
     type: json
     data: "{\r

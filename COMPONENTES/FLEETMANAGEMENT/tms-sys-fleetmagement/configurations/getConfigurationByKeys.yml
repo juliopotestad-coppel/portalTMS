@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{gcp-ext-dev}}/tms-sys-fleetmanagement/configurations"
+  url: "{{gcp-dev}}/tms-sys-fleetmanagement/configurations"
   body:
     type: json
     data: "[\r

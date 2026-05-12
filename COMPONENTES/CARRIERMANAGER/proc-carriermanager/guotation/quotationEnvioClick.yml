@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{gcp-qa}}proc-carriermanagement/quotation"
+  url: "{{gcp-qa}}/proc-carriermanagement/quotation"
   body:
     type: json
     data: "{\r

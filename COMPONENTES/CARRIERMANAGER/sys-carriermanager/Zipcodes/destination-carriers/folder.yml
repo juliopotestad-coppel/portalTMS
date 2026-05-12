@@ -1,7 +1,7 @@
 info:
-  name: Sellers
+  name: destination-carriers
   type: folder
-  seq: 11
+  seq: 5
 
 request:
   auth: inherit

@@ -1,11 +1,11 @@
 info:
   name: cargarZonas
   type: http
-  seq: 13
+  seq: 11
 
 http:
   method: POST
-  url: https://cedisdev.coppel.io:20541/legacy-tms-obasignacionderutasyzonasback/obasignacionderutasyzonasback/cargarZonas
+  url: "{{arz-dev}}/obasignacionderutasyzonasback/cargarZonas"
   body:
     type: json
     data: "{\r

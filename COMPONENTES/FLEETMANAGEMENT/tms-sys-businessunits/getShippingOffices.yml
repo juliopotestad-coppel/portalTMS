@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{gcp-ext-dev}}/tms-sys-businessunits/distribution-centers/with-sites?has-aec=true&page_size=50"
+  url: "{{gcp-dev}}/tms-sys-businessunits/distribution-centers/with-sites?has-aec=true&page_size=50"
   params:
     - name: has-aec
       value: "true"

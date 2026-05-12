@@ -1,7 +1,7 @@
 info:
   name: actuator PROD
   type: http
-  seq: 18
+  seq: 16
 
 http:
   method: GET

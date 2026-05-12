@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{gcp-ext-dev}}/tms-sys-routeconfiguration/distribution-business-unit/carrier?postalCode=43600"
+  url: "{{gcp-dev}}/tms-sys-routeconfiguration/distribution-business-unit/carrier?postalCode=43600"
   headers:
     - name: session.id
       value: "90395458"

@@ -1,11 +1,11 @@
 info:
   name: ConsultaDiaTransitoCiudades
   type: http
-  seq: 17
+  seq: 15
 
 http:
   method: POST
-  url: https://cedisdev.coppel.io:20541/obasignacionderutasyzonasback/ConsultaDiaTransitoCiudades
+  url: "{{arz-dev}}/obasignacionderutasyzonasback/ConsultaDiaTransitoCiudades"
   body:
     type: json
     data: '{"Bodega": 30006,                    "cdOrigen": 70,                    "cdDestino": "071" }'

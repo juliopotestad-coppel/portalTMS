@@ -5,7 +5,7 @@ info:
 
 http:
   method: DELETE
-  url: "{{local}}8081/tms-cap-fleetmanagement/vehicles/1"
+  url: "{{gcp-dev}}/tms-cap-fleetmanagement/vehicles/1"
   auth: inherit
 
 settings:

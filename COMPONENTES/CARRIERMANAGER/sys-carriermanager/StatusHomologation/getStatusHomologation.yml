@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{gcp-ext-dev}}/sys-carriermanager/status?carrierId=1&carrierCoppelId=1"
+  url: "{{gcp-dev}}/sys-carriermanager/status?carrierId=1&carrierCoppelId=1"
   params:
     - name: carrierId
       value: "1"

@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{gcp-ext-stage}}/bs-tms-logisticsplanning/logistics-planning"
+  url: "{{gcp-dev}}/bs-tms-logisticsplanning/logistics-planning"
   headers:
     - name: Authorization
       value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqdWxpby5wb3Rlc3RhZEBjb3BwZWwuY29tIiwiZXhwIjoxNzIxMjA1MTUxLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvZGV2L3Rtcy1jb3JlLWF1dGgvdjIvbG9naW4ifQ.5tbpQdHcwSGEpyYKbo78HJLW-4xyih6YcplJFk9Q7Z4

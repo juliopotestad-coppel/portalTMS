@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: "{{gcp-ext-qa}}/bs-tms-ownguides/guides"
+  url: "{{gcp-qa}}/bs-tms-ownguides/guides"
   body:
     type: json
     data: "{\r

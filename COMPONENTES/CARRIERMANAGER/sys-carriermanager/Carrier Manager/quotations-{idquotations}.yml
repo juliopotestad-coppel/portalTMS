@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: http://localhost:8080/dev/sys-carriermanager/quotations/a3f3712d-33c7-48c1-bd7e-0c0e45167065
+  url: "{{gcp-mac}}/sys-carriermanager/quotations/a3f3712d-33c7-48c1-bd7e-0c0e45167065"
   params:
     - name: ""
       value: a3f3712d-33c7-48c1-bd7e-0c0e45167065

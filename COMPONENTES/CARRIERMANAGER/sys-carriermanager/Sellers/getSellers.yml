@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{spring}}/sys-carriermanager/sellers/2252"
+  url: "{{gcp-mac}}/sys-carriermanager/sellers/2252"
   auth: inherit
 
 settings:

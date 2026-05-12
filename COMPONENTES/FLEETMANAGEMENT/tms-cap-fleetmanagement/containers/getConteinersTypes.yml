@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{local}}8081/tms-cap-fleetmanagement/containers/types"
+  url: "{{gcp-dev}}/tms-cap-fleetmanagement/containers/types"
   auth: inherit
 
 settings:

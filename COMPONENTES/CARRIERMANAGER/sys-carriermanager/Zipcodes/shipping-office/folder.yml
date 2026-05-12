@@ -1,7 +1,7 @@
 info:
-  name: Sellers
+  name: shipping-office
   type: folder
-  seq: 11
+  seq: 4
 
 request:
   auth: inherit

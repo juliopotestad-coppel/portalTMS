@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:8080/dev/sys-carriermanager/quotations
+  url: "{{spring}}/sys-carriermanager/quotations"
   body:
     type: json
     data: "{\r

@@ -5,7 +5,7 @@ info:
 
 http:
   method: PATCH
-  url: http://localhost:8081/dev/tms-proc-carrierselector/status?carrierId=1&carrierCoppelId=1&parcelStatus=CAMINO3
+  url: "{{gcp-dev}}/tms-proc-carrierselector/status?carrierId=1&carrierCoppelId=1&parcelStatus=CAMINO3"
   params:
     - name: carrierId
       value: "1"

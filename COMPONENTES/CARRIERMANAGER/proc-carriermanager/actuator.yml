@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{gcp-stage}}/proc-carriermanagement/actuator/health"
+  url: "{{gcp-mac}}/proc-carriermanagement/actuator/health"
   auth: inherit
 
 settings:

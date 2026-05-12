@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: https://wms-dev.coppel.io/dev/wms-ps-ropadistribucion/guias/30001030900060055552222/confirmacion
+  url: "{{gcp-wms}}/wms-ps-ropadistribucion/guias/30001030900060055552222/confirmacion"
   headers:
     - name: content-type
       value: application/json

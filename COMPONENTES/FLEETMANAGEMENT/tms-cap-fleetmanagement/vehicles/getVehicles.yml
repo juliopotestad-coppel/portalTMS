@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{gcp-ext-qa}}/tms-cap-fleetmanagement/vehicles?page=&size=10&unitNumber=&licensePlate=&year=&businessUnit=&typeId=158"
+  url: "{{gcp-qa}}/tms-cap-fleetmanagement/vehicles?page=&size=10&unitNumber=&licensePlate=&year=&businessUnit=&typeId=158"
   params:
     - name: page
       value: ""

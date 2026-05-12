@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{gcp-ext-dev}}/sys-carriermanager/coppel/status"
+  url: "{{gcp-dev}}/sys-carriermanager/coppel/status"
   auth: inherit
 
 settings:

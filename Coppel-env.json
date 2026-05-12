@@ -42,11 +42,53 @@
       "type": "text",
       "enabled": true,
       "secret": false
+    },
+    {
+      "name": "gcp-dev",
+      "value": "https://cmanager-dev.coppel.io/dev",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "gcp-qa",
+      "value": "https://cmanager-qa.coppel.io",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "gcp-stage",
+      "value": "https://cmanager-stg.coppel.io",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "gcp-prod",
+      "value": "https://cmanager.coppel.io",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "gcp-wms",
+      "value": "https://wms-dev.coppel.io/dev",
+      "type": "text",
+      "enabled": true,
+      "secret": false
+    },
+    {
+      "name": "arz-dev",
+      "value": "https://cedisdev.coppel.io:20541/legacy-tms-obasignacionderutasyzonasback",
+      "type": "text",
+      "enabled": true,
+      "secret": false
     }
   ],
   "info": {
     "type": "bruno-environment",
-    "exportedAt": "2026-05-12T17:58:04.352Z",
+    "exportedAt": "2026-05-12T21:25:42.890Z",
     "exportedUsing": "Bruno/v3.3.0"
   }
 }

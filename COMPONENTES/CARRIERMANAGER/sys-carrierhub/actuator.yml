@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{gcp-ext-dev}}/sys-carrierhub/actuator/health"
+  url: "{{gcp-dev}}/sys-carrierhub/actuator/health"
   auth: inherit
 
 settings:
