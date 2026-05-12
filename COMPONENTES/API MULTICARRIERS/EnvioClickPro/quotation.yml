@@ -1,0 +1,54 @@
+info:
+  name: quotation
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{envioclick-api}}/quotation"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \    \"origin_address\": \"Av. Revolución\",\r
+
+      \    \"origin_number\": \"381\",\r
+
+      \    \"origin_zip_code\": \"80000\",\r
+
+      \    \"origin_suburb\": \"Guadalajara Centro\",\r
+
+      \    \"destination_address\": \"Calzada Lázaro Cárdenas\",\r
+
+      \    \"destination_number\": \"624\",\r
+
+      \    \"destination_zip_code\": \"13150\",\r
+
+      \    \"destination_suburb\": \"El Santuario\",\r
+
+      \    \"package\": {\r
+
+      \        \"description\": \"Pink iPad\",\r
+
+      \        \"contentValue\": 120.01,\r
+
+      \        \"weight\": 1.01,\r
+
+      \        \"length\": 30.01,\r
+
+      \        \"height\": 15.01,\r
+
+      \        \"width\": 20.01\r
+
+      \    }\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

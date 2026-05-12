@@ -1,0 +1,56 @@
+info:
+  name: updateContainer
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{spring}}/tms-sys-fleetmanagement/containers/3"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"id\": 1,\r
+
+      \    \"unitNumber\": 52281,\r
+
+      \    \"licensePlate\": \"4RW4757\",\r
+
+      \    \"year\": 2017,\r
+
+      \    \"businessUnit\": null,\r
+
+      \    \"nomenclature\": \"S2\",\r
+
+      \    \"totalTires\": null,\r
+
+      \    \"totalAxles\": null,\r
+
+      \    \"weight\": 0,\r
+
+      \    \"clasification\": {\r
+
+      \        \"id\": 2,\r
+
+      \        \"description\": \"REMOLQUE\"\r
+
+      \    },\r
+
+      \    \"containerType\": {\r
+
+      \        \"id\": 15,\r
+
+      \        \"description\": \"GANZO\"\r
+
+      \    },\r
+
+      \    \"containerDetail\": null\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

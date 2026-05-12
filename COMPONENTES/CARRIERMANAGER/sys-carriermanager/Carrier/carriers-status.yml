@@ -1,0 +1,24 @@
+info:
+  name: carriers/status
+  type: http
+  seq: 1
+
+http:
+  method: PUT
+  url: http://localhost:8080/dev/sys-carriermanager/carriers/status
+  body:
+    type: json
+    data: "{\r
+
+      \  \"carrierId\": 5,\r
+
+      \  \"status\": 0\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,28 @@
+info:
+  name: tracking
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{local}}8081/dev/tms-carrier-tracking/tracking"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"shipmentIds\": [\r
+
+      \    \"922d16c5-6d4e-4d5a-9442-2a595205b345\",\r
+
+      \    \"7c180ec6-079f-4c5f-a253-d5a444924d18\"\r
+
+      \  ]\r
+
+      }\r\n"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

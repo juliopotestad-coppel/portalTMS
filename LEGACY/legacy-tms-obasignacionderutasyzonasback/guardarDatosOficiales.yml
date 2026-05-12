@@ -1,0 +1,46 @@
+info:
+  name: guardarDatosOficiales
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{spring}}/obasignacionderutasyzonasback/guardarDatosOficiales"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"bodega\": 30001,\r
+
+      \    \"ciudad\": 4,\r
+
+      \    \"codigoPostal\": \"80050\",\r
+
+      \    \"colonia\": \"LA PRIMAVERA\",\r
+
+      \    \"estado\": \"SINALOA\",\r
+
+      \    \"latitud\": \"24.7230157386481\",\r
+
+      \    \"longitud\": \"-107.3918080329895\",\r
+
+      \    \"nomCiudad\": \"CULIACÁN\",\r
+
+      \    \"nomEmpleado\": \"JOSE MANUEL ZAMUDIO TORRES\",\r
+
+      \    \"puestoEmpleado\": 44,\r
+
+      \    \"ruta\": 9,\r
+
+      \    \"zona\": 4007,\r
+
+      \    \"numEmpleado\": 90030151\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

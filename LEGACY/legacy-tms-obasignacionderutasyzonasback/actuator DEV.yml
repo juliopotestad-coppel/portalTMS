@@ -1,0 +1,14 @@
+info:
+  name: actuator DEV
+  type: http
+  seq: 19
+
+http:
+  method: GET
+  url: https://cedisdev.coppel.io:20541/legacy-tms-obasignacionderutasyzonasback/obasignacionderutasyzonasback/actuator/health/liveness
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

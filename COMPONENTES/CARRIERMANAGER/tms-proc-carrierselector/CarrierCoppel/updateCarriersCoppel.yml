@@ -1,0 +1,24 @@
+info:
+  name: updateCarriersCoppel
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{gcp-ext-qa}}/tms-proc-carrierselector/carriers-coppel/8"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"name\": \"TESTV\",\r
+
+      \  \"status\": 0\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

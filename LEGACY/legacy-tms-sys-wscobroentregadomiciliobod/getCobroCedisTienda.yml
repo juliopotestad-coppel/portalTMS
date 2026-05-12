@@ -1,0 +1,33 @@
+info:
+  name: getCobroCedisTienda
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://clcncedisapp.coppel.io:17091/tms-sys-wscobroentregadomiciliobod/getCobroCedisTienda?tienda=800&ciudad=96
+  params:
+    - name: tienda
+      value: "800"
+      type: query
+    - name: ciudad
+      value: "96"
+      type: query
+  body:
+    type: json
+    data: "{\r
+
+      \    \"zona\": 813,\r
+
+      \    \"tipoFactura\": 1,\r
+
+      \    \"montoFactura\": 498\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

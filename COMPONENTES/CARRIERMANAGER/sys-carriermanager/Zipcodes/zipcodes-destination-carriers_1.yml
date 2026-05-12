@@ -1,0 +1,28 @@
+info:
+  name: zipcodes/destination-carriers_1
+  type: http
+  seq: 6
+
+http:
+  method: DELETE
+  url: http://localhost:8080/dev/sys-carriermanager/zipcodes/destination-carriers
+  body:
+    type: json
+    data: "{\r
+
+      \  \"origin\": \"67250\",\r
+
+      \  \"destinations\": [\r
+
+      \    \"13040\"\r
+
+      \  ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

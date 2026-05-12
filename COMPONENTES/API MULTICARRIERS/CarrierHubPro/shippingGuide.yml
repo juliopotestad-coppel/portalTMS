@@ -1,0 +1,127 @@
+info:
+  name: shippingGuide
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: https://coppel-api.ship-smart.mx/api/v1/shipping-guide
+  body:
+    type: json
+    data: "{\r
+
+      \  \"quotationId\": \"cd73e423-2362-45b5-9273-e51f016eed4b\", \r
+
+      \  \"requestDate\": \"2025-04-02 14:00:00\",\r
+
+      \  \"externalOrderId\": \"coppel-000\",\r
+
+      \  \"shipmentReference\": \"coppel-reference-000\",\r
+
+      \  \"insurance\": false,\r
+
+      \  \"packing\": \"Caja chica\", \r
+
+      \  \"paymentType\": \"Tarjeta\", \r
+
+      \  \"purchaseFromType\": \"Web\", \r
+
+      \  \"quotationType\": \"CHECKOUT\", \r
+
+      \  \"origin\": {\r
+
+      \    \"company\": \"Coppel\", \r
+
+      \    \"rfc\": \"XAXX010101000\",\r
+
+      \    \"firstName\": \"Jane\",\r
+
+      \    \"lastName\": \"Doe\",\r
+
+      \    \"email\": \"jane.doe@example.com\", \r
+
+      \    \"phone\": \"5566666666\",\r
+
+      \    \"street\": \"Julian Villagran\",\r
+
+      \    \"number\": \"2802\",\r
+
+      \    \"settlement\": \"Bella Vista\",\r
+
+      \    \"zipCode\": \"64000\",\r
+
+      \    \"country\": \"México\",\r
+
+      \    \"package\": [\r
+
+      \      {\r
+
+      \        \"description\": \"item\",\r
+
+      \        \"numberOfItems\": 1,\r
+
+      \        \"dimensions\": {\r
+
+      \          \"width\": 1,\r
+
+      \          \"height\": 1,\r
+
+      \          \"length\": 1,\r
+
+      \          \"weight\": 1,\r
+
+      \          \"contentValue\": 1000 \r
+
+      \        },\r
+
+      \        \"satData\": {\r
+
+      \          \"keyUnitWeight\": \"foo\",\r
+
+      \          \"keyServicePrdCP\": \"foo\",\r
+
+      \          \"dangerousMaterial\": \"foo\",\r
+
+      \          \"packagingType\": \"foo\",\r
+
+      \          \"contentValue\": 1000,\r
+
+      \          \"units\": 1\r
+
+      \        }\r
+
+      \      }\r
+
+      \    ]\r
+
+      \  },\r
+
+      \  \"destination\": {\r
+
+      \    \"firstName\": \"Jonh\",\r
+
+      \    \"lastName\": \"Doe\",\r
+
+      \    \"email\": \"jonh.doe@example.com\", \r
+
+      \    \"phone\": \"5555555555\",\r
+
+      \    \"street\": \"Av. de los Astros 550\",\r
+
+      \    \"number\": \"20\",\r
+
+      \    \"settlement\": \"Jardines de las Cumbres\",\r
+
+      \    \"zipCode\": \"64347\",\r
+
+      \    \"country\": \"México\"\r
+
+      \  }\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

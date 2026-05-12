@@ -1,0 +1,7 @@
+info:
+  name: tms-proc-items
+  type: folder
+  seq: 2
+
+request:
+  auth: inherit

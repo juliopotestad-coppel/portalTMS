@@ -1,0 +1,32 @@
+info:
+  name: CarrierHub
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{spring}}/sys-carriermanager/carrierhub/tracking"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"trackingCode\": \"HM1606229981666NAA\",  \r
+
+      \  \"statusCarrier\": \"Se encuentra en transito\",  \r
+
+      \  \"statusMessage\": \"Between stations\",  \r
+
+      \  \"statusDetail\": \"Se encuentra en transito a otra estación\",  \r
+
+      \  \"receivedBy\" :\"Julio Potestad\",  \r
+
+      \  \"timestamp\": \"2025-07-21T15:00:31Z\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

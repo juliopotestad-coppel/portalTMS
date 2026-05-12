@@ -1,0 +1,15 @@
+info:
+  name: deleteDriverById
+  type: http
+  seq: 2
+
+http:
+  method: DELETE
+  url: "{{spring}}/tms-sys-fleetmanagement/drivers/90303366"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

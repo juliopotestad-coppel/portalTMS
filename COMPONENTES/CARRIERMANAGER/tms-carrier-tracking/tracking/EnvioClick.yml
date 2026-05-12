@@ -1,0 +1,44 @@
+info:
+  name: EnvioClick
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{gcp-qa}}/tms-carrier-tracking/envioclick/tracking"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"idCarrier\": 42,\r
+
+      \    \"carrier\": \"coppel express\",\r
+
+      \    \"idOrder\": 19353713,\r
+
+      \    \"trackingCode\": \"P8007335776965931\",\r
+
+      \    \"events\": [\r
+
+      \        {\r
+
+      \            \"status\": \"En tránsito\",\r
+
+      \            \"statusDetail\": \"Se encuentra en transito a otra estación\",\r
+
+      \            \"receivedBy\": null,\r
+
+      \            \"timestamp\": \"2026-12-19 15:49:15\"\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

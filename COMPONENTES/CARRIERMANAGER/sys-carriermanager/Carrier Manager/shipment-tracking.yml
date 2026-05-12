@@ -1,0 +1,28 @@
+info:
+  name: shipment/tracking
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8081/dev/sys-carriermanager/tracking
+  body:
+    type: json
+    data: "{\r
+
+      \  \"shipmentIds\": [\r
+
+      \    \"922d16c5-6d4e-4d5a-9442-2a595205b345\",\r
+
+      \    \"7c180ec6-079f-4c5f-a253-d5a444924d18\"\r
+
+      \  ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

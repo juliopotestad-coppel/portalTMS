@@ -1,0 +1,27 @@
+info:
+  name: getShippingOfficeAvailableCarriers - CSV
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{gcp-stage}}/tms-proc-carrierselector/zipcodes/shipping-office/37490"
+  headers:
+    - name: accept
+      value: "*/*"
+    - name: Content-Type
+      value: multipart/form-data
+  body:
+    type: multipart-form
+    data:
+      - name: document
+        type: file
+        value:
+          - /C:/Users/julio.potestad/Downloads/CP-LEON-CM (1).csv
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

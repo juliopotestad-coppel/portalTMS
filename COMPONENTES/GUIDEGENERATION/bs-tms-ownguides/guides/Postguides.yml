@@ -1,0 +1,73 @@
+info:
+  name: Postguides
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{gcp-ext-qa}}/bs-tms-ownguides/guides"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"routeId\": 2537,\r
+
+      \  \"distributionCity\": 4,\r
+
+      \  \"originBusinessUnit\": 30001,\r
+
+      \  \"distributionBusinessUnit\": 30001,\r
+
+      \  \"order\": 112822,\r
+
+      \  \"invoice\": 141022,\r
+
+      \  \"itemIdentifier\": 157481,\r
+
+      \  \"store\": 2,\r
+
+      \  \"saleDate\" : \"2025-08-21\",\r
+
+      \  \"promiseDate\" : \"2025-08-25\",\r
+
+      \  \"client\": 99012,\r
+
+      \  \"clientName\": \"Pedro\",\r
+
+      \  \"clientPaternalSurname\": \"López\",\r
+
+      \  \"clientMaternalSurname\": \"González\",\r
+
+      \  \"receiverName\": \"María\", \r
+
+      \  \"phone\": \"5598765432\",\r
+
+      \  \"postalCode\": \"80000\",\r
+
+      \  \"interiorNumber\": \"A\",\r
+
+      \  \"street\": \"Calle de los Olivos\",\r
+
+      \  \"crossStreets\": \"Avenida de la Paz\",\r
+
+      \  \"zone\": 80,\r
+
+      \  \"zoneName\": \"Bugambilias\",\r
+
+      \  \"exteriorNumber\": \"500\",\r
+
+      \  \"city\": 9,\r
+
+      \  \"cityName\": \"Zapopan\",\r
+
+      \  \"state\": \"Jalisco\",\r
+
+      \  \"observations\": \"Entregar antes de las 4 PM\"\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

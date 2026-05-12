@@ -1,0 +1,24 @@
+info:
+  name: track
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{envioclick-api}}/track"
+  headers:
+    - name: User-Agent
+      value: EcUserAgent-2/17264
+  body:
+    type: json
+    data: "{\r
+
+      \    \"trackingCode\": \"HM1606229981666NHN\"\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

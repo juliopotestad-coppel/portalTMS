@@ -1,0 +1,7 @@
+info:
+  name: legacy-tms-sys-wscobroentregadomiciliobod
+  type: folder
+  seq: 3
+
+request:
+  auth: inherit

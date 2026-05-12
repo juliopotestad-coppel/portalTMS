@@ -1,0 +1,18 @@
+info:
+  name: validarPermisos
+  type: http
+  seq: 16
+
+http:
+  method: POST
+  url: "{{spring}}/obasignacionderutasyzonasback/validarPermisos"
+  body:
+    type: json
+    data: '{ "Bodega": 30001,              "numEmpleado": 90277366}'
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

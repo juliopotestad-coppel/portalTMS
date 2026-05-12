@@ -1,0 +1,177 @@
+info:
+  name: shipment
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{gcp-ext-qa}}/sys-carrierhub/shipment"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+          "contractId": 3,
+          "parcelQuotationId": "5b7bef79-354a-4fff-90ac-8506f499adef",
+          "parcelId": 17,
+          "parcelName": "COPPEL EXPRESS",
+          "packageType": "Caja chica",
+          "requestPickup": true,
+          "pickupDate": "2025-04-10",
+          "crossStreet": "Entre Reforma y Juárez",
+          "requestDate": "2025-04-08 13:16:02",
+          "quotationUuid": "f5918fd9-6d3e-4ca2-af18-a7691e64c50d",
+          "externalOrderId": "coppel-000",
+          "shipmentReference": "No. order 0010",
+          "insurance": false,
+          "packing": "Caja chica",
+          "paymentType": "Tarjeta",
+          "purchaseFromType": "Web",
+          "quotationType": "CHECKOUT",
+          "origin": {
+              "company": "Coppel",
+              "rfc": "XAXX010101000",      
+              "firstName": "Jane",
+              "lastName": "Doe",
+              "email": "jane.doe@example.com",
+              "phone": "5566666666",
+              "street": "Julian Villagran",
+              "number": "2802",
+              "settlement": "Bella Vista",
+              "zipCode": "64000",
+              "country": "México",
+              "reference": "Frente a tienda OXXO",
+              "crossStreet": "Entre Reforma y Juárez",
+              "description": "Documentos importantes",
+              "dimensions": {
+                  "width": 25,
+                  "length": 40,
+                  "height": 15,
+                  "weight": 5,
+                  "contentValue": 1500.50
+              },
+              "package": [
+                  {
+                      "description": "item",
+                      "numberOfItems": 1,
+                      "identifier": "LT-LNV-001",
+                      "dimensions": {
+                          "width": 1,
+                          "height": 1,
+                          "length": 1,
+                          "weight": 1,
+                          "contentValue": 1000
+                      },
+                      "satData": {
+                          "keyUnitWeight": "foo",
+                          "keyServicePrdCP": "foo",
+                          "dangerousMaterial": "foo",
+                          "packagingType": "foo",
+                          "contentValue": 1000,
+                          "units": 1
+                      }
+                  }
+              ]
+          },
+          "destination": {
+              "crossStreet": "Entre Reforma y Juárez",
+              "firstName": "Jonh",
+              "lastName": "Doe",
+              "email": "jonh.doe@example.com",
+              "phone": "5555555555",
+              "street": "Av. de los Astros 550",
+              "number": "20",
+              "settlement": "Jardines de las Cumbres",
+              "zipCode": "64347",
+              "country": "México"
+          }
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  Generated from cURL: curl --location 'http://localhost:8000/dev/sys-carrierhub/shipment' \
+  --header 'Content-Type: application/json' \
+  --data-raw '{
+      "contractId": 3,
+      "parcelQuotationId": "cd73e423-2362-45b5-9273-e51f016eed4b",
+      "carrierId": 17,
+      "carrier": "COPPEL EXPRESS",
+      "packageType": "Caja chica",
+      "requestPickup": true,
+      "pickupDate": "2025-04-10",
+      "crossStreet": "Entre Reforma y Juárez",
+      "requestDate": "2025-04-08 13:16:02",
+      "quotationId": "cd73e423-2362-45b5-9273-e51f016eed4b",
+      "externalOrderId": "coppel-000",
+      "shipmentReference": "No. order 0010",
+      "insurance": false,
+      "packing": "Caja chica",
+      "paymentType": "Tarjeta",
+      "purchaseFromType": "Web",
+      "quotationType": "CHECKOUT",
+      "origin": {
+          "company": "Coppel",
+          "rfc": "XAXX010101000",      
+          "firstName": "Jane",
+          "lastName": "Doe",
+          "email": "jane.doe@example.com",
+          "phone": "5566666666",
+          "street": "Julian Villagran",
+          "number": "2802",
+          "settlement": "Bella Vista",
+          "zipCode": "64000",
+          "country": "México",
+          "reference": "Frente a tienda OXXO",
+          "crossStreet": "Entre Reforma y Juárez",
+          "description": "Documentos importantes",
+          "dimensions": {
+              "width": 25,
+              "length": 40,
+              "height": 15,
+              "weight": 5,
+              "contentValue": 1500.50
+          },
+          "package": [
+              {
+                  "description": "item",
+                  "numberOfItems": 1,
+                  "identifier": "LT-LNV-001",
+                  "dimensions": {
+                      "width": 1,
+                      "height": 1,
+                      "length": 1,
+                      "weight": 1,
+                      "contentValue": 1000
+                  },
+                  "satData": {
+                      "keyUnitWeight": "foo",
+                      "keyServicePrdCP": "foo",
+                      "dangerousMaterial": "foo",
+                      "packagingType": "foo",
+                      "contentValue": 1000,
+                      "units": 1
+                  }
+              }
+          ]
+      },
+      "destination": {
+          "crossStreet": "Entre Reforma y Juárez",
+          "firstName": "Jonh",
+          "lastName": "Doe",
+          "email": "jonh.doe@example.com",
+          "phone": "5555555555",
+          "street": "Av. de los Astros 550",
+          "number": "20",
+          "settlement": "Jardines de las Cumbres",
+          "zipCode": "64347",
+          "country": "México"
+      }
+  }'

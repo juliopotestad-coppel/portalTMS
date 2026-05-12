@@ -1,0 +1,32 @@
+info:
+  name: CarrierHub
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{gcp-dev}}/tms-carrier-tracking/carrierhub/tracking"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"trackingCode\": \"BYL7369110882917698\",  \r
+
+      \  \"statusCarrier\": \"Resguardo\",  \r
+
+      \  \"statusMessage\": \"RESGUARDO ( RESGUARDO ) NO SE LOCALIZA CALLE( INTENTO DE ENTREGA - NO SE LOCALIZA CALLE )\",  \r
+
+      \  \"statusDetail\": \"Se encuentra en transito a otra estación\",  \r
+
+      \  \"receivedBy\" :\"Julio Potestad\",  \r
+
+      \  \"timestamp\": \"2025-08-28T13:22:22.627568300\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

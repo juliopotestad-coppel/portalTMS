@@ -1,0 +1,18 @@
+info:
+  name: speedUpServices
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{local}}8081/dev/speedupservices/speedUp"
+  body:
+    type: json
+    data: "{\r\n    \"bodega\": 30017\r\n}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

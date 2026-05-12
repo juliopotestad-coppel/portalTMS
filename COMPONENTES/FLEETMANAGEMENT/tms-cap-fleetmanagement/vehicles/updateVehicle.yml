@@ -1,0 +1,42 @@
+info:
+  name: updateVehicle
+  type: http
+  seq: 2
+
+http:
+  method: PATCH
+  url: "{{gcp-ext-dev}}/tms-proc-fleetmanagement/vehicles/1"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"licensePlate\": \"LWT877A\",\r
+
+      \    \"year\": 2020,\r
+
+      \    \"vehicleDetail\": {\r
+
+      \            \"cabinCapacity\": 5,\r
+
+      \            \"energySource\": \"DIESEL\",\r
+
+      \            \"targetYieldFull\": 15.5,\r
+
+      \            \"targetYieldSimple\": 5.5,\r
+
+      \            \"hasGPS\": true,\r
+
+      \            \"purchaseReason\": \"PRUEBA\",\r
+
+      \            \"updatedBy\": 90303366\r
+
+      \        }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

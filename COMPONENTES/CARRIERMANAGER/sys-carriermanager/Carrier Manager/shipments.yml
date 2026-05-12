@@ -1,0 +1,110 @@
+info:
+  name: shipments
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{local}}8080/dev/sys-carriermanager/shipments"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"quotationUuid\": \"4c623c85-1768-44e9-9210-aeac97b22ad9\",\r
+
+      \  \"vendorId\": \"string\",\r
+
+      \  \"trackingCode\": \"string\",\r
+
+      \  \"insurance\": true,\r
+
+      \  \"originRfc\": \"string\",\r
+
+      \  \"originFirstName\": \"string\",\r
+
+      \  \"originLastName\": \"string\",\r
+
+      \  \"originPhone\": \"string\",\r
+
+      \  \"originStreet\": \"string\",\r
+
+      \  \"originNumber\": \"string\",\r
+
+      \  \"originInteriorNumber\": \"string\",\r
+
+      \  \"originSettlement\": \"string\",\r
+
+      \  \"originZipCode\": \"string\",\r
+
+      \  \"originCountry\": \"string\",\r
+
+      \  \"destinationRfc\": \"string\",\r
+
+      \  \"destinationFirstName\": \"string\",\r
+
+      \  \"destinationLastName\": \"string\",\r
+
+      \  \"destinationPhone\": \"string\",\r
+
+      \  \"destinationStreet\": \"string\",\r
+
+      \  \"destinationNumber\": \"string\",\r
+
+      \  \"destinationInteriorNumber\": \"string\",\r
+
+      \  \"destinationSettlement\": \"string\",\r
+
+      \  \"destinationZipCode\": \"string\",\r
+
+      \  \"destinationCountry\": \"string\",\r
+
+      \  \"guideUrl\": \"string\",\r
+
+      \  \"base64Pdf\": \"string\",\r
+
+      \  \"packageType\": \"string\",\r
+
+      \  \"paymentType\": \"string\",\r
+
+      \  \"purchaseFromType\": \"string\",\r
+
+      \  \"shipmentItems\": [\r
+
+      \    {\r
+
+      \      \"shipmentId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\r
+
+      \      \"serviceProductKey\": \"string\",\r
+
+      \      \"identifier\": \"string\",\r
+
+      \      \"description\": \"string\",\r
+
+      \      \"units\": 1073741824,\r
+
+      \      \"width\": 0.1,\r
+
+      \      \"height\": 0.1,\r
+
+      \      \"length\": 0.1,\r
+
+      \      \"weight\": 0.1,\r
+
+      \      \"contentValue\": 0.1,\r
+
+      \      \"dangerousMaterial\": \"string\",\r
+
+      \      \"packagingType\": \"string\"\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

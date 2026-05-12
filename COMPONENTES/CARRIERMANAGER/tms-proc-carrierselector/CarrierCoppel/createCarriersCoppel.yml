@@ -1,0 +1,24 @@
+info:
+  name: createCarriersCoppel
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{local}}8081/dev/tms-proc-carrierselector/carriers-coppel"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"name\": \"\",\r
+
+      \  \"status\": 1\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

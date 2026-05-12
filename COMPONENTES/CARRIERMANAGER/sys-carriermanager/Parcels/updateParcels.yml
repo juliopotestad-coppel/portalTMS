@@ -1,0 +1,24 @@
+info:
+  name: updateParcels
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{gcp-ext-dev}}/sys-carriermanager/carriers/3/parcel/19"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"parcelId\": \"Test12312324\",\r
+
+      \  \"status\": 0\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,170 @@
+info:
+  name: v2-logistics-planning
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{spring}}/bs-tms-logisticsplanning/v2/logistics-planning"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"originPostalCode\":\"80200\",\r
+
+      \  \"destinationPostalCode\": \"83295\", \r
+
+      \  \"destinationSettlement\": 237153, \r
+
+      \  \"isMarketplace\":true, \r
+
+      \  \"sellerId\": 2000, \r
+
+      \  \"items\": [ \r
+
+      \    {\r
+
+      \      \"sku\": \"MKP-344223\",\r
+
+      \      \"name\": \"string\",\r
+
+      \      \"shortDescription\": \"string\", \r
+
+      \      \"longDescription\": \"string\", \r
+
+      \      \"dangerous\": true, \r
+
+      \      \"volumetricItem\": { \r
+
+      \        \"depth\": 5, \r
+
+      \        \"width\": 6, \r
+
+      \        \"height\": 4, \r
+
+      \        \"weight\": 14 \r
+
+      \      },\r
+
+      \      \"area\": { \r
+
+      \        \"id\": 1,\r
+
+      \        \"name\": \"ropa\"\r
+
+      \      }\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"sku\": \"MKP-344225\",\r
+
+      \      \"name\": \"string\",\r
+
+      \      \"shortDescription\": \"string\", \r
+
+      \      \"longDescription\": \"string\", \r
+
+      \      \"dangerous\": true, \r
+
+      \      \"volumetricItem\": { \r
+
+      \        \"depth\": 61, \r
+
+      \        \"width\": 66, \r
+
+      \        \"height\": 64, \r
+
+      \        \"weight\": 41 \r
+
+      \      },\r
+
+      \      \"area\": { \r
+
+      \        \"id\": 1,\r
+
+      \        \"name\": \"ropa\"\r
+
+      \      }\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"sku\": \"MKP-344228\",\r
+
+      \      \"name\": \"string\",\r
+
+      \      \"shortDescription\": \"string\", \r
+
+      \      \"longDescription\": \"string\", \r
+
+      \      \"dangerous\": true, \r
+
+      \      \"volumetricItem\": { \r
+
+      \        \"depth\": 71, \r
+
+      \        \"width\": 56, \r
+
+      \        \"height\": 64, \r
+
+      \        \"weight\": 51 \r
+
+      \      },\r
+
+      \      \"area\": { \r
+
+      \        \"id\": 1,\r
+
+      \        \"name\": \"ropa\"\r
+
+      \      }\r
+
+      \    },\r
+
+      \    {\r
+
+      \      \"sku\": \"MKP-344235\",\r
+
+      \      \"name\": \"string\",\r
+
+      \      \"shortDescription\": \"string\", \r
+
+      \      \"longDescription\": \"string\", \r
+
+      \      \"dangerous\": true, \r
+
+      \      \"volumetricItem\": { \r
+
+      \        \"depth\": 11, \r
+
+      \        \"width\": 16, \r
+
+      \        \"height\": 14, \r
+
+      \        \"weight\": 13 \r
+
+      \      },\r
+
+      \      \"area\": { \r
+
+      \        \"id\": 1,\r
+
+      \        \"name\": \"ropa\"\r
+
+      \      }\r
+
+      \    }\r
+
+      \  ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,7 @@
+info:
+  name: ps-tm-tlm-booking
+  type: folder
+  seq: 8
+
+request:
+  auth: inherit

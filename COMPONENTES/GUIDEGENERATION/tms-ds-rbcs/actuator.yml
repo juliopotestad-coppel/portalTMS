@@ -1,0 +1,282 @@
+info:
+  name: actuator
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{apigee-dev-mac}}tms-ds-rbcs/actuator"
+  body:
+    type: json
+    data: "[\r
+
+      \    {\r
+
+      \        \"id\": \"2dfe2274-bda1-46bf-af08-58a06e818261\",\r
+
+      \        \"sku\": \"213468\",\r
+
+      \        \"name\": \"RECARGA\",\r
+
+      \        \"shortDescription\": \"TA ELECTRONICO 90\",\r
+
+      \        \"longDescription\": \"RECARGA UNEFON TA ELECTRONICO 90\",\r
+
+      \        \"itemTypeCode\": 0,\r
+
+      \        \"model\": \"TA ELECTRONICO 90\",\r
+
+      \        \"dangerous\": false,\r
+
+      \        \"fragile\": false,\r
+
+      \        \"critical\": false,\r
+
+      \        \"assemblyRequired\": true,\r
+
+      \        \"assemblyTimeInMinutes\": 15,\r
+
+      \        \"area\": {\r
+
+      \            \"id\": 1,\r
+
+      \            \"name\": \"MUEBLES\"\r
+
+      \        },\r
+
+      \        \"itemTypes\": [\r
+
+      \            {\r
+
+      \                \"id\": 1,\r
+
+      \                \"name\": \"Normal\"\r
+
+      \            }\r
+
+      \        ],\r
+
+      \        \"updatedAt\": null,\r
+
+      \        \"createdAt\": null,\r
+
+      \        \"volumetricItem\": {\r
+
+      \            \"itemId\": \"2dfe2274-bda1-46bf-af08-58a06e818261\",\r
+
+      \            \"depth\": 100.0,\r
+
+      \            \"width\": 100.0,\r
+
+      \            \"height\": 100.0,\r
+
+      \            \"weight\": 0.0010000000474974513,\r
+
+      \            \"unitOfMeasure\": {\r
+
+      \                \"code\": \"cm\",\r
+
+      \                \"name\": \"Centímetro\",\r
+
+      \                \"description\": \"Unidad de medida para longitud\",\r
+
+      \                \"unitOfMeasureTypeCode\": \"LENGTH\",\r
+
+      \                \"measurementSystem\": {\r
+
+      \                    \"id\": 1,\r
+
+      \                    \"name\": \"Sistema Métrico\"\r
+
+      \                }\r
+
+      \            },\r
+
+      \            \"unitOfMeasureWeightCode\": {\r
+
+      \                \"code\": \"kg\",\r
+
+      \                \"name\": \"Kilogramo\",\r
+
+      \                \"description\": \"Unidad de medida para masa/peso\",\r
+
+      \                \"unitOfMeasureTypeCode\": \"MASS\",\r
+
+      \                \"measurementSystem\": {\r
+
+      \                    \"id\": 1,\r
+
+      \                    \"name\": \"Sistema Métrico\"\r
+
+      \                }\r
+
+      \            },\r
+
+      \            \"volume\": 1000000.00\r
+
+      \        },\r
+
+      \        \"itemTax\": {\r
+
+      \            \"id\": 2276,\r
+
+      \            \"taxablePercent\": \"0.16\",\r
+
+      \            \"taxCode\": {\r
+
+      \                \"id\": \"83111504\",\r
+
+      \                \"name\": \"Servicios de tarjetas telefÃ³nicas prepagadas\",\r
+
+      \                \"description\": \"Servicios de tarjetas telefÃ³nicas prepagadas\"\r
+
+      \            },\r
+
+      \            \"unitOfMeasureTax\": {\r
+
+      \                \"id\": \"H87\",\r
+
+      \                \"name\": \"Pieza\",\r
+
+      \                \"description\": \"Unidad contable para la tributación de artículos individuales.\"\r
+
+      \            }\r
+
+      \        }\r
+
+      \    },\r
+
+      \    {\r
+
+      \        \"id\": \"7bae60d1-3a1d-405d-ad19-95a1a3585377\",\r
+
+      \        \"sku\": \"301482110\",\r
+
+      \        \"name\": \"*PROG VOLUMEN FW23* PLAYERA BASICA COLO\",\r
+
+      \        \"shortDescription\": \"*PROG VOLUMEN FW23* PLAYERA BASICA COLOR BLANCO CON PRINT LOCALIZADO AL FRENTE Y ATRAS\",\r
+
+      \        \"longDescription\": \"PROG VOLUMEN FW23 PLAYERA BASICA COLOR BLANCO CON PRINT LOCALIZADO AL FRENTE Y ATRAS\",\r
+
+      \        \"itemTypeCode\": 1,\r
+
+      \        \"model\": \"VOL-004\",\r
+
+      \        \"dangerous\": false,\r
+
+      \        \"fragile\": false,\r
+
+      \        \"critical\": false,\r
+
+      \        \"assemblyRequired\": false,\r
+
+      \        \"assemblyTimeInMinutes\": 15,\r
+
+      \        \"area\": {\r
+
+      \            \"id\": 2,\r
+
+      \            \"name\": \"ROPA\"\r
+
+      \        },\r
+
+      \        \"itemTypes\": null,\r
+
+      \        \"updatedAt\": null,\r
+
+      \        \"createdAt\": null,\r
+
+      \        \"volumetricItem\": {\r
+
+      \            \"itemId\": \"7bae60d1-3a1d-405d-ad19-95a1a3585377\",\r
+
+      \            \"depth\": 40.07396697998047,\r
+
+      \            \"width\": 0.8833245635032654,\r
+
+      \            \"height\": 66.49816131591797,\r
+
+      \            \"weight\": 0.12869538366794586,\r
+
+      \            \"unitOfMeasure\": {\r
+
+      \                \"code\": \"cm\",\r
+
+      \                \"name\": \"Centímetro\",\r
+
+      \                \"description\": \"Unidad de medida para longitud\",\r
+
+      \                \"unitOfMeasureTypeCode\": \"LENGTH\",\r
+
+      \                \"measurementSystem\": {\r
+
+      \                    \"id\": 1,\r
+
+      \                    \"name\": \"Sistema Métrico\"\r
+
+      \                }\r
+
+      \            },\r
+
+      \            \"unitOfMeasureWeightCode\": {\r
+
+      \                \"code\": \"kg\",\r
+
+      \                \"name\": \"Kilogramo\",\r
+
+      \                \"description\": \"Unidad de medida para masa/peso\",\r
+
+      \                \"unitOfMeasureTypeCode\": \"MASS\",\r
+
+      \                \"measurementSystem\": {\r
+
+      \                    \"id\": 1,\r
+
+      \                    \"name\": \"Sistema Métrico\"\r
+
+      \                }\r
+
+      \            },\r
+
+      \            \"volume\": 2353.92\r
+
+      \        },\r
+
+      \        \"itemTax\": {\r
+
+      \            \"id\": 971,\r
+
+      \            \"taxablePercent\": \"0.16\",\r
+
+      \            \"taxCode\": {\r
+
+      \                \"id\": \"53103001\",\r
+
+      \                \"name\": \"Camisetas (t-shirts) para hombre\",\r
+
+      \                \"description\": \"Camisetas (t-shirts) para hombre\"\r
+
+      \            },\r
+
+      \            \"unitOfMeasureTax\": {\r
+
+      \                \"id\": \"H87\",\r
+
+      \                \"name\": \"Pieza\",\r
+
+      \                \"description\": \"Unidad contable para la tributación de artículos individuales.\"\r
+
+      \            }\r
+
+      \        }\r
+
+      \    }\r
+
+      ]"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

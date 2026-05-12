@@ -1,0 +1,15 @@
+info:
+  name: getCurrentInsuranceContract
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{gcp-ext-dev}}/tms-cap-fleetmanagement/insurance-contracts/current"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

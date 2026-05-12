@@ -1,0 +1,22 @@
+info:
+  name: DEPRECATED-validarHuellaEmp
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{spring}}/obasignacionderutasyzonasback/validarHuellaEmp"
+  body:
+    type: json
+    data: |-
+      {
+          "numEmpleado": 90277366,
+          "template": "TkZSI6sBFmUBiAH0AfQBAAD//wAAAAb/QQZ4cSARCYmdfUAjDXtnjSAMBY+npQAlGXGawuAgCH3qxsAJBpEs5QAjB3uj/iAlEnQbDcEaDZd6cUEXFZSjeuEeBqJmiWEPBo+UoqEaFH+nqaEjBYlltUEUD47l0YENA4gt1QEjBItg5cEUC4mm8mEdCYpg+cEPCpNo/sEXPX9QMoIXToNWRmIUEJOlYYIbB4UpaaIZE4M/iuIVFJBMrcITDpqtvQIfDYe46eIhDoyvDcMgF4SZEmMcEYSvFWMWK3uoSiMiGIXdXuMHB4yTbWMgFIfqluMREI6MySMhD4ns0mMPCJIE2SMVCoPl9WMJBJGKHcQaBYvsPmQMBZHpQYQIBYqMdYQhCYDxemQOCYeH4gQcC4R6JQUUC3IEJYUbBoSGMWUeAoDzbiUMCXiAgSUeCHiAgSUeCHiAgSUeCHiAgSUeCHiAgSUeCHiAgSUeCHiAgSUeCHiAgSUeCHiAgSUeCHiAgSUeCHiAgSUeCHiAgSUeCHiAgSUeCHiAgSUeCHiAgSUeCHgAAAAABAAHAAQAAAAAAAAA"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

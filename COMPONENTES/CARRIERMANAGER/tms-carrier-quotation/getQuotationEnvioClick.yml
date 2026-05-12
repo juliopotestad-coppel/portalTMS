@@ -1,0 +1,126 @@
+info:
+  name: getQuotationEnvioClick
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{gcp-dev}}/tms-carrier-quotation/quotation"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"from\": \"MKTP_NACIONALES\",\r
+
+      \  \"quotationType\": \"MKTP_NACIONALES\",\r
+
+      \  \"origins\": [\r
+
+      \    {\r
+
+      \      \"street\": \"string\",\r
+
+      \      \"number\": \"strin\",\r
+
+      \      \"intNumber\": \"strin\",\r
+
+      \      \"settlement\": \"string\",\r
+
+      \      \"crossStreet\": \"string\",\r
+
+      \      \"zipCode\": \"45619\",\r
+
+      \      \"reference\": \"string\",\r
+
+      \      \"country\": \"string\",\r
+
+      \      \"description\": \"string\",\r
+
+      \      \"dimensions\": {\r
+
+      \        \"description\": \"string\",\r
+
+      \        \"width\": 25.0,\r
+
+      \        \"length\": 40.0,\r
+
+      \        \"height\": 5.0,\r
+
+      \        \"weight\": 30.0,\r
+
+      \        \"contentValue\": 1,\r
+
+      \        \"content_value\": 500.5 \r
+
+      \      },\r
+
+      \      \"items\": [\r
+
+      \        {\r
+
+      \          \"description\": \"Envio de Ropa\",\r
+
+      \          \"numberOfItems\": 1,\r
+
+      \          \"realDimensions\": true,\r
+
+      \          \"dimensions\": {\r
+
+      \            \"description\": \"Envio de Ropa\",\r
+
+      \            \"width\": 25.0,\r
+
+      \            \"length\": 40.0,\r
+
+      \            \"height\": 5.0,\r
+
+      \            \"weight\":  30.0,\r
+
+      \            \"contentValue\": 1,\r
+
+      \            \"content_value\": 500.5\r
+
+      \          }\r
+
+      \        }\r
+
+      \      ]\r
+
+      \    }\r
+
+      \  ],\r
+
+      \  \"destination\": {\r
+
+      \    \"street\": \"string\",\r
+
+      \    \"number\": \"500\",\r
+
+      \    \"intNumber\": \"strin\",\r
+
+      \    \"settlement\": \"string\",\r
+
+      \    \"crossStreet\": \"string\",\r
+
+      \    \"zipCode\": \"43600\",\r
+
+      \    \"reference\": \"string\",\r
+
+      \    \"country\": \"MX\"\r
+
+      \  },\r
+
+      \  \"packageType\": \"Paquete\",\r
+
+      \  \"paymentType\": \"Prepaid\",\r
+
+      \  \"purchaseFromType\": \"Cliente\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

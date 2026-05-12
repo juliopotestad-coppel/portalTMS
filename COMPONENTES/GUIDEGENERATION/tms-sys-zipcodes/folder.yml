@@ -1,0 +1,7 @@
+info:
+  name: tms-sys-zipcodes
+  type: folder
+  seq: 12
+
+request:
+  auth: inherit

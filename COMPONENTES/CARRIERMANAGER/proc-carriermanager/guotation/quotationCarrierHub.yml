@@ -1,0 +1,142 @@
+info:
+  name: quotationCarrierHub
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{gcp-qa}}/proc-carriermanagement/quotation"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"from\": \"ROPA\",\r
+
+      \  \"quotationType\": \"INVOICEREADY\",\r
+
+      \  \"origins\": [\r
+
+      \    {\r
+
+      \      \"street\": \"string\",\r
+
+      \      \"number\": \"strin\",\r
+
+      \      \"intNumber\": \"strin\",\r
+
+      \      \"settlement\": \"Bella Vista\",\r
+
+      \      \"crossStreet\": \"string\",\r
+
+      \      \"zipCode\": \"64000\",\r
+
+      \      \"reference\": \"string\",\r
+
+      \      \"country\": \"México\",\r
+
+      \      \"description\": \"string\",\r
+
+      \      \"dimensions\": {\r
+
+      \        \"width\": 1,\r
+
+      \        \"length\": 1,\r
+
+      \        \"height\": 1,\r
+
+      \        \"weight\": 1,\r
+
+      \        \"contentValue\": 1\r
+
+      \      },\r
+
+      \      \"items\": [\r
+
+      \        {\r
+
+      \          \"description\": \"lorem\",\r
+
+      \          \"numberOfItems\": 1,\r
+
+      \          \"realDimensions\": true,\r
+
+      \          \"dimensions\": {\r
+
+      \            \"width\": 20.01,\r
+
+      \            \"length\": 20.01,\r
+
+      \            \"height\": 20.01,\r
+
+      \            \"weight\":  3.01,\r
+
+      \            \"contentValue\": 1\r
+
+      \          }\r
+
+      \        },\r
+
+      \        {\r
+
+      \          \"description\": \"lorem 2\",\r
+
+      \          \"numberOfItems\": 2,\r
+
+      \          \"realDimensions\": true,\r
+
+      \          \"dimensions\": {\r
+
+      \            \"width\": 20.01,\r
+
+      \            \"length\": 20.01,\r
+
+      \            \"height\": 20.01,\r
+
+      \            \"weight\":  3.01,\r
+
+      \            \"contentValue\": 1\r
+
+      \          }\r
+
+      \        }\r
+
+      \      ]\r
+
+      \    }\r
+
+      \  ],\r
+
+      \  \"destination\": {\r
+
+      \    \"street\": \"string\",\r
+
+      \    \"number\": \"strin\",\r
+
+      \    \"intNumber\": \"strin\",\r
+
+      \    \"settlement\": \"Jardines de las Cumbres\",\r
+
+      \    \"crossStreet\": \"string\",\r
+
+      \    \"zipCode\": \"64347\",\r
+
+      \    \"reference\": \"string\",\r
+
+      \    \"country\": \"México\"\r
+
+      \  },\r
+
+      \  \"packageType\": \"Caja\",\r
+
+      \  \"paymentType\": \"Tarjeta\",\r
+
+      \  \"purchaseFromType\": \"Web\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

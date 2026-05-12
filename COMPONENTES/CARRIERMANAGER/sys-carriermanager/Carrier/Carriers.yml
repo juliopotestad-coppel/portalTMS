@@ -1,0 +1,30 @@
+info:
+  name: Carriers
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{gcp-ext-dev}}/sys-carriermanager/carriers"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"originZipCodes\": [\r
+
+      \    \"80000\"\r
+
+      \  ],\r
+
+      \  \"destinationZipCode\": \"13040\",\r
+
+      \  \"slug\": \"MARKETPLACE_DEFAULT\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

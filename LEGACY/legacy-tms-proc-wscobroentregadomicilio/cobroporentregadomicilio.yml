@@ -1,0 +1,38 @@
+info:
+  name: cobroporentregadomicilio
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{spring}}/tms-proc-wscobroentregadomicilio/cobroporentregadomicilio/96/800"
+  body:
+    type: text
+    data: "{\r
+
+      \    \"zona\": 813  ,\r
+
+      \    \"tipoFactura\": 1,\r
+
+      \    \"montoFactura\": 498,\r
+
+      \    \"codigos\": [\r
+
+      \        {\r
+
+      \            \"codigo\": \"133345\",\r
+
+      \            \"area\": 1\r
+
+      \        }\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

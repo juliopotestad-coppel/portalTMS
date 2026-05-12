@@ -1,0 +1,15 @@
+info:
+  name: actuator Docker
+  type: http
+  seq: 7
+
+http:
+  method: GET
+  url: "{{local}}8082/tms-proc-fleetmanagement/actuator/health"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

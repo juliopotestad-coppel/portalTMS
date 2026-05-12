@@ -1,0 +1,22 @@
+info:
+  name: getShippingOffices
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{gcp-ext-dev}}/tms-sys-businessunits/distribution-centers/with-sites?has-aec=true&page_size=50"
+  params:
+    - name: has-aec
+      value: "true"
+      type: query
+    - name: page_size
+      value: "50"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

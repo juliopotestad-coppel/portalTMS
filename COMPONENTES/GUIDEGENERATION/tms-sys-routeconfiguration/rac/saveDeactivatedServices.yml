@@ -1,0 +1,26 @@
+info:
+  name: saveDeactivatedServices
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{spring}}/tms-sys-routeconfiguration/rac/deactivated-services-route"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"service_id\": \"b7f4e5bf-3af8-45dc-859b-1bd81d65a379\",\r
+
+      \  \"city_dist_id\": 1,\r
+
+      \  \"audit_comment\": \"prueba para logs\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

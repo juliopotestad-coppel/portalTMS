@@ -1,0 +1,209 @@
+info:
+  name: shippingEnvioClick 2
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{gcp-dev}}/proc-carriermanagement/shipping"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"quotationUuid\": \"33d21411-77c2-44bf-8bc9-0564f4330fc7\",\r
+
+      \  \"parcelQuotationId\": \"2612457\",\r
+
+      \  \"shipmentReference\": \"My Shipment 1A\",\r
+
+      \  \"requestPickup\": true,\r
+
+      \  \"pickupDate\": \"2017-12-20\",\r
+
+      \  \"insurance\": true,\r
+
+      \  \"origin\": {\r
+
+      \    \"company\": \"Company name\",\r
+
+      \    \"rfc\": \"XAXX010101000\",\r
+
+      \    \"firstName\": \"string\",\r
+
+      \    \"lastName\": \"string\",\r
+
+      \    \"email\": \"jose.zamora@coppel.com\",\r
+
+      \    \"phone\": \"3333333333\",\r
+
+      \    \"street\": \"Avenida Siempre Viva\",\r
+
+      \    \"number\": \"742\",\r
+
+      \    \"intNumber\": \"strin\",\r
+
+      \    \"settlement\": \"string\",\r
+
+      \    \"crossStreet\": \"string\",\r
+
+      \    \"zipCode\": \"45619\",\r
+
+      \    \"country\": \"MX\",\r
+
+      \    \"reference\": \"string\",\r
+
+      \    \"observations\": \"string\",\r
+
+      \    \"description\": \"string\",\r
+
+      \    \"dimensions\": {\r
+
+      \      \"weight\": 30,\r
+
+      \      \"length\": 40,\r
+
+      \      \"height\": 25,\r
+
+      \      \"width\": 5,\r
+
+      \      \"contentValue\": 500.50\r
+
+      \    },\r
+
+      \    \"package\": [\r
+
+      \      {\r
+
+      \        \"description\": \"TENIS DAMA VANS VN0A4U22BB3\",\r
+
+      \        \"numberOfItems\": 1,\r
+
+      \        \"identifier\": \"string\",\r
+
+      \        \"dimensions\": {\r
+
+      \          \"weight\": 10,\r
+
+      \          \"length\": 10,\r
+
+      \          \"height\": 8,\r
+
+      \          \"width\": 1,\r
+
+      \          \"contentValue\": 350.75\r
+
+      \        },\r
+
+      \        \"satData\": {\r
+
+      \          \"keyUnitWeight\": \"XPK\",\r
+
+      \          \"keyServicePrdCP\": \"31181701\",\r
+
+      \          \"dangerousMaterial\": null,\r
+
+      \          \"packagingType\": null,\r
+
+      \          \"contentValue\": 350.75,\r
+
+      \          \"units\": 1\r
+
+      \        }\r
+
+      \      },\r
+
+      \      {\r
+
+      \        \"description\":  \"PROG VOL FW23 PLAYERA BASICA\",\r
+
+      \        \"numberOfItems\": 1,\r
+
+      \        \"identifier\": \"string\",\r
+
+      \        \"dimensions\": {\r
+
+      \          \"weight\": 15,\r
+
+      \          \"length\": 25,\r
+
+      \          \"height\": 8,\r
+
+      \          \"width\": 2,\r
+
+      \          \"contentValue\": 150.25\r
+
+      \        },\r
+
+      \        \"satData\": {\r
+
+      \          \"keyUnitWeight\": \"XPK\",\r
+
+      \          \"keyServicePrdCP\": \"31181701\",\r
+
+      \          \"dangerousMaterial\": null,\r
+
+      \          \"packagingType\": null,\r
+
+      \          \"contentValue\": 150.25,\r
+
+      \          \"units\": 1\r
+
+      \        }\r
+
+      \      }\r
+
+      \    ]\r
+
+      \  },\r
+
+      \  \"destination\": {\r
+
+      \    \"company\": \"Company name\",\r
+
+      \    \"rfc\": \"XAXX010101000\",\r
+
+      \    \"firstName\": \"string\",\r
+
+      \    \"lastName\": \"string\",\r
+
+      \    \"email\": \"pablo.hernandez@coppel.com\",\r
+
+      \    \"phone\": \"3333333333\",\r
+
+      \    \"street\": \"Calle de los Olivos\",\r
+
+      \    \"number\": \"500\",\r
+
+      \    \"intNumber\": \"A\",\r
+
+      \    \"settlement\": \"string\",\r
+
+      \    \"crossStreet\": \"string\",\r
+
+      \    \"zipCode\": \"43600\",\r
+
+      \    \"country\": \"MX\",\r
+
+      \    \"reference\": \"Edificio rojo.\",\r
+
+      \    \"observations\": \"string\"\r
+
+      \  },\r
+
+      \  \"packageType\": \"Paquete\",\r
+
+      \  \"paymentType\": \"Prepaid\",\r
+
+      \  \"purchaseFromType\": \"Cliente\",\r
+
+      \  \"conditionals\": [\r
+
+      \  ]\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

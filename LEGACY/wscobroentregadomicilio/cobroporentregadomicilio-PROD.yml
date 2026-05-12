@@ -1,0 +1,32 @@
+info:
+  name: cobroporentregadomicilio-PROD
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://CLCNcedisapp.coppel.io:17002/cobroDomicilio/cobroporentregadomicilio/4/7506
+  body:
+    type: json
+    data: "{\r
+
+      \    \"zona\": 2447  ,\r
+
+      \    \"tipoFactura\": 1,\r
+
+      \    \"montoFactura\": 498,\r
+
+      \    \"codigos\": [\r
+
+      \        {\"codigo\": \"100048\",\"area\": 1}\r
+
+      \    ]\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,28 @@
+info:
+  name: trackBatch
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{spring}}/sys-carrierhub/tracking/batch"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"trackingCodes\": [\r
+
+      \    \"4055280375130778\"\r
+
+      \  ],\r
+
+      \  \"contractId\": 13\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

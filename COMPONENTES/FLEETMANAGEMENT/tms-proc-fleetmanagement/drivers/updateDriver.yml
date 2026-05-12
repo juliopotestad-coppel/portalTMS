@@ -1,0 +1,29 @@
+info:
+  name: updateDriver
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{local}}8082/tms-proc-fleetmanagement/drivers/90178337"
+  headers:
+    - name: Session.Id
+      value: "90354687"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"license\": \"PG43546788\",\r
+
+      \    \"rfc\": \"VAAM130719H61\",\r
+
+      \    \"tele\": \"99887755\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

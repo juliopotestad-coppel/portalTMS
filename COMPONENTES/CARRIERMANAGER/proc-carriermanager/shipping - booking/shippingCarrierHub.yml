@@ -1,0 +1,171 @@
+info:
+  name: shippingCarrierHub
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{gcp-dev}}/proc-carriermanagement/shipping"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"quotationUuid\": \"943ee6f5-9a58-4907-8ab3-5044918760ec\",\r
+
+      \  \"parcelQuotationId\": \"cd73e423-2362-45b5-9273-e51f016eed4b\",\r
+
+      \  \"shipmentReference\": \"My Shipment 1A\",\r
+
+      \  \"requestPickup\": true,\r
+
+      \  \"pickupDate\": \"2017-12-20\",\r
+
+      \  \"insurance\": true,\r
+
+      \  \"origin\": {\r
+
+      \    \"company\": \"Coppel\",\r
+
+      \    \"rfc\": \"XAXX010101000\",\r
+
+      \    \"firstName\": \"Jane\",\r
+
+      \    \"lastName\": \"Doe\",\r
+
+      \    \"email\": \"jane.doe@example.com\", \r
+
+      \    \"phone\": \"5566666666\",\r
+
+      \    \"street\": \"Julian Villagran\",\r
+
+      \    \"number\": \"2802\",\r
+
+      \    \"intNumber\": \"strin\",\r
+
+      \    \"settlement\": \"Bella Vista\",\r
+
+      \    \"crossStreet\": \"string\",\r
+
+      \    \"zipCode\": \"64000\",\r
+
+      \    \"country\": \"México\",\r
+
+      \    \"reference\": \"string\",\r
+
+      \    \"observations\": \"string\",\r
+
+      \    \"description\": \"string\",\r
+
+      \    \"dimensions\": {\r
+
+      \        \"width\": 1,\r
+
+      \        \"height\": 1,\r
+
+      \        \"length\": 1,\r
+
+      \        \"weight\": 1,\r
+
+      \        \"contentValue\": 1000 \r
+
+      \    },\r
+
+      \    \"package\": [\r
+
+      \      {\r
+
+      \        \"description\": \"item\",\r
+
+      \        \"numberOfItems\": 1,\r
+
+      \        \"identifier\": \"string\",\r
+
+      \        \"dimensions\": {\r
+
+      \          \"weight\": 1,\r
+
+      \          \"length\": 1,\r
+
+      \          \"height\": 1,\r
+
+      \          \"width\": 1,\r
+
+      \          \"contentValue\": 1000\r
+
+      \        },\r
+
+      \        \"satData\": {\r
+
+      \          \"keyUnitWeight\": \"foo\",\r
+
+      \          \"keyServicePrdCP\": \"foo\",\r
+
+      \          \"dangerousMaterial\": \"foo\",\r
+
+      \          \"packagingType\": \"foo\",\r
+
+      \          \"contentValue\": 1000,\r
+
+      \          \"units\": 1\r
+
+      \        }\r
+
+      \      }\r
+
+      \    ]\r
+
+      \  },\r
+
+      \  \"destination\": {\r
+
+      \    \"company\": \"Company name\",\r
+
+      \    \"rfc\": \"XAXX010101000\",\r
+
+      \    \"firstName\": \"Jonh\",\r
+
+      \    \"lastName\": \"Doe\",\r
+
+      \    \"email\": \"jonh.doe@example.com\", \r
+
+      \    \"phone\": \"5555555555\",\r
+
+      \    \"street\": \"Av. de los Astros 550\",\r
+
+      \    \"number\": \"20\",\r
+
+      \    \"intNumber\": \"strin\",\r
+
+      \    \"settlement\": \"Jardines de las Cumbres\",\r
+
+      \    \"crossStreet\": \"string\",\r
+
+      \    \"zipCode\": \"64347\",\r
+
+      \    \"country\": \"string\",\r
+
+      \    \"reference\": \"string\",\r
+
+      \    \"observations\": \"string\"\r
+
+      \  },\r
+
+      \  \"packageType\": \"Caja chica\",\r
+
+      \  \"paymentType\": \"Tarjeta\",\r
+
+      \  \"purchaseFromType\": \"Web\",\r
+
+      \  \"conditionals\": [\r
+
+      \    \"Bien Feo\"\r
+
+      \  ]\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

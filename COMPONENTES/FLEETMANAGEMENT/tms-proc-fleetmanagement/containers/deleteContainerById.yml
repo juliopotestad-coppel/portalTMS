@@ -1,0 +1,18 @@
+info:
+  name: deleteContainerById
+  type: http
+  seq: 2
+
+http:
+  method: DELETE
+  url: "{{local}}8082/tms-proc-fleetmanagement/containers/3"
+  headers:
+    - name: Session.Id
+      value: "900568796"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

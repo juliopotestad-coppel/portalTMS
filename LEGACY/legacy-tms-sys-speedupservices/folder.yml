@@ -1,0 +1,7 @@
+info:
+  name: legacy-tms-sys-speedupservices
+  type: folder
+  seq: 8
+
+request:
+  auth: inherit

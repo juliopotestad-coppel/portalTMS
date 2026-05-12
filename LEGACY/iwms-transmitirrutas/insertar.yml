@@ -1,0 +1,25 @@
+info:
+  name: insertar
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{spring}}/transmitirrutas/rutas/transmitir"
+  body:
+    type: json
+    data: |-
+      [
+          {
+              "ciudad": 161,
+              "ruta": 1,
+              "jaula": "31"
+          }
+      ]
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

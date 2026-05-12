@@ -1,0 +1,24 @@
+info:
+  name: updateStatusCoppel
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{gcp-ext-qa}}/sys-carriermanager/coppel/status/8"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"name\": \"TESTING\",\r
+
+      \  \"status\": 0\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

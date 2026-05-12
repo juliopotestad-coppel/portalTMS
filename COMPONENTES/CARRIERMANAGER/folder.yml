@@ -1,0 +1,18 @@
+info:
+  name: CARRIERMANAGER
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit
+
+docs:
+  content: |-
+    ### **Descripción**
+
+    El carriermanager se utiliza para la homologación de los estatus de las hub de carrier con los estatus internos de Coppel
+
+    ### **Diagrama de arquitectura y BD**
+
+    [https://app.diagrams.net/#G1MQKC0CninwELO6RN_30gcurwI1yJabvv#{"pageId":"ZjSOr6Pi_y_PBuvuWuN3"}](https://app.diagrams.net/#G1MQKC0CninwELO6RN_30gcurwI1yJabvv#%7B%22pageId%22%3A%22ZjSOr6Pi_y_PBuvuWuN3%22%7D)
+  type: text/markdown

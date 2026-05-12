@@ -1,0 +1,65 @@
+info:
+  name: quotation
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{carrierhub-api}}/quotation"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"requestDate\": \"2025-04-02 12:00:00\",\r
+
+      \    \"quotationType\": \"INVOICEREADY\",                \r
+
+      \    \"packageType\": \"Caja\",                      \r
+
+      \    \"paymentType\": \"Tarjeta\",                   \r
+
+      \    \"purchaseFromType\": \"Web\",                  \r
+
+      \    \"origins\": [\r
+
+      \        {\r
+
+      \            \"settlement\": \"Bella Vista\",  \r
+
+      \            \"country\": \"México\", \r
+
+      \            \"zipCode\": \"64000\",            \r
+
+      \            \"items\": [\r
+
+      \                {\r
+
+      \                    \"description\": \"lorem\",\r
+
+      \                    \"numberOfItems\": 1\r
+
+      \                }\r
+
+      \            ]\r
+
+      \        }\r
+
+      \    ],\r
+
+      \    \"destination\": {\r
+
+      \        \"settlement\": \"Jardines de las Cumbres\",         \r
+
+      \        \"country\": \"México\",                   \r
+
+      \        \"zipCode\": \"64347\"                    \r
+
+      \    }\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

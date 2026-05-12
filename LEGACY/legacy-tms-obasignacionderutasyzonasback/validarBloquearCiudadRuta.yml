@@ -1,0 +1,34 @@
+info:
+  name: validarBloquearCiudadRuta
+  type: http
+  seq: 15
+
+http:
+  method: POST
+  url: "{{spring}}/obasignacionderutasyzonasback/validarBloquearCiudadRuta"
+  body:
+    type: json
+    data: "{ \r
+
+      \    \"bodega\": 30020,\r
+
+      \    \"ciudad\": 0,\r
+
+      \    \"ip\": \"105923217\",\r
+
+      \    \"numEmpleado\": \"90277366\",\r
+
+      \    \"opcion\": 2,\r
+
+      \    \"referencia\": \"\",\r
+
+      \    \"ruta\": 0\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

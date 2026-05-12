@@ -1,0 +1,28 @@
+info:
+  name: tracking
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{gcp-dev}}/proc-carriermanagement/tracking"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"shipmentIds\": [\r
+
+      \    \"abe58545-7d7a-4df0-9204-b85c171f29be\"\r
+
+      \  ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: 1ZwdP6vm95kxEHRKcBABGgu5lORNCbEjnL6YTyUrtGlXDvXZo2I9VW4admRrCODUrZvMw9Hh3fTb5QRySrbV0y21GKMBszm5qqMreCq3PARMBFhdXGkLZhqBzWlClukSHJBs5DnoDbpONn1NkYyp0FD5L4m60ZACBNzS0dD8MYfUDTJqR2v2puqGGg4pvtf5KHY3PpLUrXAtubldToxshgVIIDN5n5EsUYQz6PeDe4a0g2vuVnpmnKeKsilkPYaD
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

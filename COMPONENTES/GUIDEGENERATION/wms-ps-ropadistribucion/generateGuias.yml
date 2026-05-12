@@ -1,0 +1,80 @@
+info:
+  name: generateGuias
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://wms-dev.coppel.io/dev/wms-ps-ropadistribucion/guias
+  headers:
+    - name: content-type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "rutaId": 1,                               
+        "ciudadPertenece": 3,                        
+        "bodegaGenera": 30001,                         
+        "bodegaDistribuye": 30001,                  
+        "numeropedido": 9999,                      
+        "factura": 5555,                           
+        "numerocodigo": 2222,                      
+        "tienda": 6,                               
+        "fechaventa": "2024-11-20",                
+        "fecha_promesa": "2024-11-25",             
+        "numerocliente": 99012,                    
+        "nombrecliente": "Pedro",           
+        "nombreapellidopaterno": "López",          
+        "nombreapellidomaterno": "González",       
+        "nombrepersonarecibe": "Ana Martínez",    
+        "numerotelefono": "5559876511",           
+        "numcodigopostal": "22810",               
+        "numerocasainterior": "2B",                
+        "nombrecalle": "Calle Ejemplo",           
+        "entrecalles": "Calle 7 y Calle 8",       
+        "numerozona": 1,                          
+        "nombrezona": "Zona Sur",                 
+        "numerocasa": "500",                      
+        "numerociudad": 2,                       
+        "observaciones": "Entregar antes de las 4 PM"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  Generated from cURL: curl --request POST \
+    --url https://wms-dev.coppel.io/dev/wms-ps-ropadistribucion/guias \
+    --header 'content-type: application/json' \
+    --data '{
+    "rutaId": 1,                               
+    "ciudadPertenece": 3,                        
+    "bodegaGenera": 30002,                         
+    "bodegaDistribuye": 30001,                  
+    "numeropedido": 9999,                      
+    "factura": 5555,                           
+    "numerocodigo": 2222,                      
+    "tienda": 6,                               
+    "fechaventa": "2024-11-20",                
+    "fecha_promesa": "2024-11-25",             
+    "numerocliente": 99012,                    
+    "nombrecliente": "Pedro",           
+    "nombreapellidopaterno": "López",          
+    "nombreapellidomaterno": "González",       
+    "nombrepersonarecibe": "Ana Martínez",    
+    "numerotelefono": "5559876511",           
+    "numcodigopostal": "22810",               
+    "numerocasainterior": "2B",                
+    "nombrecalle": "Calle Ejemplo",           
+    "entrecalles": "Calle 7 y Calle 8",       
+    "numerozona": 1,                          
+    "nombrezona": "Zona Sur",                 
+    "numerocasa": "500",                      
+    "numerociudad": 2,                       
+    "observaciones": "Entregar antes de las 4 PM"
+  }'

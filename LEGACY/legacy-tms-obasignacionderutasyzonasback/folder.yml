@@ -1,0 +1,7 @@
+info:
+  name: legacy-tms-obasignacionderutasyzonasback
+  type: folder
+  seq: 2
+
+request:
+  auth: inherit

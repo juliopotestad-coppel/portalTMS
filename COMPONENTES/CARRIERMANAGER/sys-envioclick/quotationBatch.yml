@@ -1,0 +1,124 @@
+info:
+  name: quotationBatch
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{spring}}/sys-envioclick/quotation/batch"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"quotationType\": \"ROPA\",\r
+
+      \  \"origins\": [\r
+
+      \    {\r
+
+      \      \"street\": \"Avenida Siempre Viva\",\r
+
+      \      \"number\": \"742\",\r
+
+      \      \"intNumber\": \"5\",\r
+
+      \      \"settlement\": \"Colonia Centro\",\r
+
+      \      \"crossStreet\": \"Calle Falsa 123\",\r
+
+      \      \"zipCode\": \"45619\",\r
+
+      \      \"reference\": \"Edificio de cristal.\",\r
+
+      \      \"country\": \"MX\",\r
+
+      \      \"description\": \"Cajas de ropa y zapatos\",\r
+
+      \      \"dimensions\": {\r
+
+      \        \"description\": \"string\",\r
+
+      \        \"width\": 25.0,\r
+
+      \        \"length\": 40.0,\r
+
+      \        \"height\": 5.0,\r
+
+      \        \"weight\": 30.0,\r
+
+      \        \"contentValue\": 1,\r
+
+      \        \"content_value\": 500.5\r
+
+      \      },\r
+
+      \      \"items\": [\r
+
+      \        {\r
+
+      \          \"description\": \"Envio de Ropa\",\r
+
+      \          \"numberOfItems\": 1,\r
+
+      \          \"realDimensions\": true,\r
+
+      \          \"dimensions\": {\r
+
+      \            \"description\": \"Envio de Ropa\",\r
+
+      \            \"width\": 25.0,\r
+
+      \            \"length\": 40.0,\r
+
+      \            \"height\": 5.0,\r
+
+      \            \"weight\":  30.0,\r
+
+      \            \"contentValue\": 1,\r
+
+      \            \"content_value\": 500.5\r
+
+      \          }\r
+
+      \        }\r
+
+      \      ]\r
+
+      \    }\r
+
+      \  ],\r
+
+      \  \"destination\": {\r
+
+      \    \"street\": \"string\",\r
+
+      \    \"number\": \"500\",\r
+
+      \    \"intNumber\": \"strin\",\r
+
+      \    \"settlement\": \"string\",\r
+
+      \    \"crossStreet\": \"string\",\r
+
+      \    \"zipCode\": \"43600\",\r
+
+      \    \"reference\": \"string\"\r
+
+      \  },\r
+
+      \  \"packageType\": \"Paquete\",\r
+
+      \  \"paymentType\": \"Prepaid\",\r
+
+      \  \"purchaseFromType\": \"Cliente\",\r
+
+      \  \"contractId\": 1\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

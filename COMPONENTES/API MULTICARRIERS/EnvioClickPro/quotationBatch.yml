@@ -1,0 +1,74 @@
+info:
+  name: quotationBatch
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{envioclick-api}}/quotation/batch"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \    \"quotations\": {\r
+
+      \        \"159197146x45619\": {\r
+
+      \            \"origin_zip_code\": \"45619\",\r
+
+      \            \"destination_zip_code\": \"43600\",\r
+
+      \            \"package\": {\r
+
+      \                \"description\": \"Envio de Ropa\",\r
+
+      \                \"content_value\": 100,\r
+
+      \                \"weight\": 3.01,\r
+
+      \                \"length\": 20.01,\r
+
+      \                \"height\": 20.01,\r
+
+      \                \"width\": 20.01\r
+
+      \            }\r
+
+      \        },\r
+
+      \        \"159197146x45620\": {\r
+
+      \            \"origin_zip_code\": \"45619\",\r
+
+      \            \"destination_zip_code\": \"43600\",\r
+
+      \            \"package\": {\r
+
+      \                \"description\": \"Envio de Ropa\",\r
+
+      \                \"content_value\": 100,\r
+
+      \                \"weight\": 3.01,\r
+
+      \                \"length\": 20.01,\r
+
+      \                \"height\": 20.01,\r
+
+      \                \"width\": 20.01\r
+
+      \            }\r
+
+      \        }\r
+
+      \    }\r
+
+      }"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

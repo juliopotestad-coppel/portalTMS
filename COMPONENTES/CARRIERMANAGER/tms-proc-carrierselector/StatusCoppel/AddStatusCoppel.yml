@@ -1,0 +1,24 @@
+info:
+  name: AddStatusCoppel
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8081/dev/tms-proc-carrierselector/coppel/status
+  body:
+    type: json
+    data: "{\r
+
+      \  \"name\": \"doro\",\r
+
+      \  \"status\": 1\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

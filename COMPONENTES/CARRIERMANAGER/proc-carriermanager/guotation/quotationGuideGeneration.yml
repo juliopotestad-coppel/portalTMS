@@ -1,0 +1,118 @@
+info:
+  name: quotationGuideGeneration
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{gcp-dev}}/proc-carriermanagement/quotation"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"from\": \"MKTP_NACIONALES\",\r
+
+      \    \"quotationType\": \"MKTP_NACIONALES\",\r
+
+      \    \"origins\": [\r
+
+      \        {\r
+
+      \            \"street\": \"LIBRAMIENTO BENITO JUAREZ SUR\",\r
+
+      \            \"number\": \"06301\",\r
+
+      \            \"intNumber\": \"0\",\r
+
+      \            \"settlement\": \"PARQUE INSDUSTRIAL LA COSTA\",\r
+
+      \            \"crossStreet\": \"CARRETERA LOS MOCHIS-CULIACAN\",\r
+
+      \            \"zipCode\": \"80130\",\r
+
+      \            \"country\": \"MX\",\r
+
+      \            \"reference\": \"CARRETERA LOS MOCHIS-CULIACAN\",\r
+
+      \            \"description\": \"Cedis Culiacan\",\r
+
+      \            \"dimensions\": {\r
+
+      \                \"weight\": 1.0,\r
+
+      \                \"length\": 30.0,\r
+
+      \                \"height\": 15.0,\r
+
+      \                \"width\": 20.0,\r
+
+      \                \"contentValue\": 120.0\r
+
+      \            },\r
+
+      \            \"items\": [\r
+
+      \                {\r
+
+      \                    \"description\": \"Pink iPad\",\r
+
+      \                    \"numberOfItems\": 1,\r
+
+      \                    \"realDimensions\": true,\r
+
+      \                    \"dimensions\": {\r
+
+      \                        \"weight\": 1.01,\r
+
+      \                        \"length\": 30.01,\r
+
+      \                        \"height\": 15.01,\r
+
+      \                        \"width\": 20.01,\r
+
+      \                        \"contentValue\": 120.01\r
+
+      \                    }\r
+
+      \                }\r
+
+      \            ]\r
+
+      \        }\r
+
+      \    ],\r
+
+      \    \"destination\": {\r
+
+      \        \"street\": \"AV ENCARNACION ORTIZ\",\r
+
+      \        \"number\": \"01860\",\r
+
+      \        \"intNumber\": \"0\",\r
+
+      \        \"settlement\": \"AMPLIACION DEL GAS\",\r
+
+      \        \"crossStreet\": \"69\",\r
+
+      \        \"zipCode\": \"02970\",\r
+
+      \        \"country\": \"MX\",\r
+
+      \        \"reference\": \"69\"\r
+
+      \    },\r
+
+      \    \"packageType\": \"CAJA CHICA\",\r
+
+      \    \"paymentType\": \"Credit Card\",\r
+
+      \    \"purchaseFromType\": \"Compra en linea\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

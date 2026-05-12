@@ -1,0 +1,52 @@
+info:
+  name: saveTemporaryDriver
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{local}}8081/tms-cap-fleetmanagement/drivers/temporary"
+  body:
+    type: json
+    data: "{\r
+
+      \  \"driver\": {\r
+
+      \    \"id\": 90303366,\r
+
+      \    \"name\": \"JULIO JESUS POTESTAD BEROVIDES\",\r
+
+      \    \"license\": \"licDeDiosito\",\r
+
+      \    \"rfc\": \"notevoyadeci\",\r
+
+      \    \"center\": 305790,\r
+
+      \    \"businessUnit\": \"DC-30006\",\r
+
+      \    \"licenseType\": \"A\"\r
+
+      \  },\r
+
+      \  \"temporaryDriver\": {\r
+
+      \    \"startDate\": \"2024-03-25T23:28:14.460Z\",\r
+
+      \    \"endDate\": \"2024-03-28T23:28:14.460Z\",\r
+
+      \    \"justification\": \"Porq puedo y porq kiero :)\",\r
+
+      \    \"jobPosition\": 35,\r
+
+      \    \"updatedBy\": 90303366\r
+
+      \  }\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

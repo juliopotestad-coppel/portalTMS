@@ -1,0 +1,36 @@
+info:
+  name: confirmarGuias
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: https://wms-dev.coppel.io/dev/wms-ps-ropadistribucion/guias/30001030900060055552222/confirmacion
+  headers:
+    - name: content-type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "opcEstado": 1,
+        "numpedido":9999,
+        "bodegaGenera": 30001
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+
+docs: |-
+  Generated from cURL: curl --request POST \
+    --url https://wms-dev.coppel.io/dev/wms-ps-ropadistribucion/guias/3000102830001238793157481/confirmacion \
+    --header 'content-type: application/json' \
+    --data '{
+    "opcEstado": 1,
+    "numpedido":208259446,
+    "bodegaGenera":"30001"
+  }'
