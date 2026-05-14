@@ -84,6 +84,13 @@
       "type": "text",
       "enabled": true,
       "secret": false
+    },
+    {
+      "name": "token-copomex",
+      "value": "e71de7ae-b669-46a9-a0a9-010a44cd8432",
+      "type": "text",
+      "enabled": true,
+      "secret": false
     }
   ],
   "info": {

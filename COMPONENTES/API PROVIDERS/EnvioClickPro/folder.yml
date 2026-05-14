@@ -1,0 +1,14 @@
+info:
+  name: EnvioClickPro
+  type: folder
+  seq: 2
+
+request:
+  auth: inherit
+
+docs:
+  content: |+
+    Documentación de referencia para el consumo del API de EnvíoClick
+    https://apidoc.envioclickpro.com/
+
+  type: text/markdown

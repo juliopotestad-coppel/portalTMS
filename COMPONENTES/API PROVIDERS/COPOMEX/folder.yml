@@ -1,0 +1,13 @@
+info:
+  name: "COPOMEX "
+  type: folder
+  seq: 3
+
+request:
+  auth: inherit
+
+docs:
+  content: |-
+    API COPOMEX (Código Postal Mexicano) es una API para obtener la info de un código postal.
+    https://api.copomex.com/documentacion/inicio
+  type: text/markdown

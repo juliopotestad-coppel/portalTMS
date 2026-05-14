@@ -12,11 +12,10 @@ Portal Transporte TMS Supply Chain Coppel
 #### Componentes
 *Agrupacion de componentes de backend en GCP*
 
-- Api Multicarriers
 - Carriermanager
 - Fleetmanagement
 - Guidegeneration
-
+- Api Providers
 
 
 #### Legacy
